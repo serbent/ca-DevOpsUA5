@@ -1,4 +1,4 @@
-# Additional excercises for Linmux Fundamentals 
+# Additional excercises for Linux Fundamentals 
 
 ## ls - listing files
 use `ls --help` to get a list of all available options  
