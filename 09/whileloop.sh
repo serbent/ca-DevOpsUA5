@@ -7,7 +7,7 @@ do
     echo "To the infinity and beyond!!!!"
     sleep 2
 ((COUNTER++))
-    if [ $COUNTER -ge 3 ]; then
+    if [ $COUNTER -ge 10 ]; then
         break;
         echo $COUNTER
     fi
