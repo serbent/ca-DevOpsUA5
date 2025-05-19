@@ -11,10 +11,7 @@ Check if
 -f file/directory is a file  
 -d file/directory is a directory  
 
-## Additional task
 # Exercises
-
-## Script 02
 
 Go to [mockaroo](https://mockaroo.com/) and generate some random data.
 
