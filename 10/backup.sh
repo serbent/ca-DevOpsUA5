@@ -6,8 +6,6 @@ set -e
 
 echo "Hello World!"
 
-
-
 function backup() {
     pushd /home
     local LIST=`ls`
