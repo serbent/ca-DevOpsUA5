@@ -1,0 +1,49 @@
+--- 
+- name: Code Academy DevOps UA5 - Playbook Example
+  hosts: all
+  become: true
+  roles:
+    - { role: 1davidmichael.ansible-role-nginx }
+  tasks:
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: yes
+      when: ansible_os_family == 'Debian'
+    - name: Update yum cache
+      ansible.builtin.yum:
+        update_cache: yes
+      when: ansible_os_family == 'RedHat'
+    - name: Create a file
+      ansible.builtin.file: 
+        path: "/tmp/{{ inventory_hostname }}.txt"
+        group: root
+        owner: root
+        mode: '0644'
+        state: touch
+
+    - name: Create a directory
+      ansible.builtin.file:
+        path: "/tmp/{{ inventory_hostname }}"
+        group: root
+        owner: root
+        mode: '0755'
+        state: directory
+    - name: Copy a file
+      ansible.builtin.copy:
+        src: ./id_ed25519.pub
+        dest: "~/.ssh/id_ed25519.pub"
+        owner: root
+        group: root
+        mode: '0644'
+    - name: Run a command
+      ansible.builtin.command: echo "Hello, {{ inventory_hostname }}!"
+      register: command_output
+    - name: Print command output
+      ansible.builtin.debug:
+        msg: "{{ command_output.stdout }}"
+    - name: Run a shell command
+      ansible.builtin.shell: echo "Hello from shell on {{ inventory_hostname }}!"
+      register: shell_output
+    - name: Print shell command output
+      ansible.builtin.debug:
+        msg: "{{ shell_output.stdout }}"
