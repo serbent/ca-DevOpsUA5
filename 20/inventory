@@ -1,0 +1,10 @@
+all:
+  hosts:
+    # ansible01:
+      # ansible_host: 172.174.246.249
+      # ansible_user: azureuser
+      # ansible_python_interpreter: /usr/bin/python3
+    ansible02:
+      ansible_host: 20.168.196.188
+      ansible_user: serpent
+      ansible_python_interpreter: /usr/bin/python3

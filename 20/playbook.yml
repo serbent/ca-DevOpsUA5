@@ -1,0 +1,71 @@
+--- 
+- name: Install Docker and launch Nginx on Ubuntu
+  hosts: all
+  become: true
+  tasks:
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Install required packages
+      ansible.builtin.apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - python3-pip
+        state: present
+
+    - name: Add Docker GPG apt Key
+      ansible.builtin.apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker repository
+      ansible.builtin.apt_repository:
+        repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+        state: present
+
+    - name: Install Docker and Docker CLI
+      ansible.builtin.apt:
+        name:
+          - docker-ce
+          - docker-ce-cli
+        state: present
+        update_cache: yes
+
+    - name: Ensure Docker service is running
+      ansible.builtin.service:
+        name: docker
+        state: started
+        enabled: true
+
+    - name: Install Docker Python module
+      ansible.builtin.pip:
+        name: docker
+        executable: pip3
+
+    - name: Pull Nginx image
+      community.docker.docker_image:
+        name: nginx
+        source: pull
+
+    - name: Run Nginx container
+      community.docker.docker_container:
+        name: nginx
+        image: nginx
+        state: started
+        ports:
+          - "80:80"
+        volumes:
+          - /var/www/html:/usr/share/nginx/html
+    - name: Create directory for Nginx HTML files
+      ansible.builtin.file:
+        path: /var/www/html/index.html
+        state: touch
+    - name: Copy index.html to Nginx container
+      ansible.builtin.copy:
+        src: ./templates/welcome.html
+        dest: /var/www/html/index.html
+        mode: '0644'
