@@ -34,6 +34,9 @@ RUN touch /home/ansible/.ssh/authorized_keys
 RUN chown ansible:ansible /home/ansible/.ssh/authorized_keys && \
     chmod 600 /home/ansible/.ssh/authorized_keys
 
+COPY test.sh /app/test.sh
+RUN chmod +x /app/test.sh
+WORKDIR /app
 # Expose SSH port
 EXPOSE 22
 
