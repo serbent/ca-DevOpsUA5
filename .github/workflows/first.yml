@@ -23,6 +23,7 @@ jobs:
       - name: Push to Docker Hub
         run: docker push serbentas/ca-devopsua5:0.1-ubuntu
   test:
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
@@ -30,4 +31,4 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: Run tests
-        run: docker run --rm serbentas/ca-devopsua5:0.1-ubuntu ./21/test.sh
+        run: docker run --rm serbentas/ca-devopsua5:0.1-ubuntu /app/test.sh
