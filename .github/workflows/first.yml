@@ -2,8 +2,8 @@ name: Main Workflow
 
 on:
   push:
-    branches:
-      - dev
+    # branches:
+    #   - dev
 
 jobs:
   build:
