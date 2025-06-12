@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: Run build
-        run: docker build -t ca-DevOpsUA5:0.1-ubuntu ./21/ 
+        run: docker build -t ca-devopsua5:0.1-ubuntu ./21/ 
       
       - name: Changes pushed from machine
         run: echo "This was written on the local machine" 
