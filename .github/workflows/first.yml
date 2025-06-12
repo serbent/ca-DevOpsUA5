@@ -16,5 +16,5 @@ jobs:
       - name: Run build
         run: docker build -t ca-devopsua5:0.1-ubuntu ./21/ 
       
-      - name: Changes pushed from machine
-        run: echo "This was written on the local machine" 
+      - name: Docker login
+        run: echo "${{ secrets.dockerhubpassword }}" | docker login -u "${{ secrets.dockerhubusername }}" --password-stdin
