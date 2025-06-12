@@ -1,13 +1,20 @@
-name: Print Hello World
+name: Main Workflow
 
 on:
-    push:
-        # branches:
-        #     - main
+  push:
+    branches:
+      - dev
 
 jobs:
-    print-message:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Print Hello World
-                run: echo "heloo world"
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: Run build
+        run: echo "Building project..."
+      
+      - name: Changes pushed from machine
+        run: echo "This was written on the local machine" 
