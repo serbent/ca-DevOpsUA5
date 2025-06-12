@@ -1,13 +1,33 @@
-name: Print Hello World
+name: Main Workflow
 
 on:
-    push:
-        # branches:
-        #     - main
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
-    print-message:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Print Hello World
-                run: echo "heloo world"
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: Run build
+        run: docker build -t serbentas/ca-devopsua5:0.1-ubuntu ./21/ 
+      
+      - name: Docker login
+        run: echo "${{ secrets.dockerhubpassword }}" | docker login -u "${{ secrets.dockerhubusername }}" --password-stdin
+
+      - name: Push to Docker Hub
+        run: docker push serbentas/ca-devopsua5:0.1-ubuntu
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: Run tests
+        run: docker run --rm serbentas/ca-devopsua5:0.1-ubuntu ./21/test.sh
