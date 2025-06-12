@@ -23,7 +23,7 @@ jobs:
       - name: Push to Docker Hub
         run: docker push serbentas/ca-devopsua5:0.1-ubuntu
   test:
-    needs: build
+    needs: build # Run after the build job completes successfully
     runs-on: ubuntu-latest
 
     steps:
