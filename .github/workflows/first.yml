@@ -34,3 +34,13 @@ jobs:
 
       - name: Run tests
         run: docker run --rm serbentas/ca-devopsua5:0.1-ubuntu /app/test.sh
+  prepare-infra:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: Prepare infrastructure
+        run: |
+          echo ./22/createVM.sh
