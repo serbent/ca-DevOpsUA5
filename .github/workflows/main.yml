@@ -1,0 +1,23 @@
+name: First Workflow
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: Run build
+        run: docker build -t serbentas/ca-devopsua5:0.1-ubuntu ./21/ 
+        
+      - name: Docker login
+        run: echo "${{ secrets.dockerhubpassword }}" | docker login -u "${{ secrets.dockerhubusername }}" --password-stdin
+
+      - name: Push to Docker Hub
+        run: docker push serbentas/ca-devopsua5:0.1-ubuntu
