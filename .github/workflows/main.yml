@@ -31,3 +31,16 @@ jobs:
 
       - name: Push to Docker Hub
         run: docker push ${{ env.repository }}/${{ env.image }}:${{ inputs.tag }}
+    
+  infra:
+    needs: build # Run after the build job completes successfully
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.2.2
+
+      - name: AZURE CLI Login
+        uses: azure/login@v2.3.0
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
