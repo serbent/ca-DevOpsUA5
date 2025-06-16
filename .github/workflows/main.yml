@@ -14,7 +14,6 @@ on:
 env:
   repository: serbentas
   image: ca-devopsua5
-  tag: ${{ inputs.tag }} # Use the input tag or default to '0.1-ubuntu'
 
 jobs:
   build:
@@ -24,9 +23,12 @@ jobs:
       - name: Check tag
         id: check_tag
         run: |
-          if [[ -z "${{ env.tag }}" ]]; then
+          if [[ -z "${{ inputs.tag }}" ]]; then
             echo "Tag was left empty. Assuming default tag: 0.1-ubuntu"
             echo "tag=0.1-ubuntu" >> $GITHUB_ENV
+          else
+
+            echo "tag=${{ inputs.tag }}" >> $GITHUB_ENV
           fi
       - name: Checkout code
         uses: actions/checkout@v4.2.2
