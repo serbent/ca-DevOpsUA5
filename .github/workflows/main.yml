@@ -54,3 +54,7 @@ jobs:
         uses: azure/login@v2.3.0
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Prepare infrastructure
+        run: |
+          echo ./22/createVM.sh
