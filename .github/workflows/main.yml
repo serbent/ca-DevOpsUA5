@@ -20,6 +20,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check tag
+        id: check_tag
+        run: |
+          if [[ -z "${{ inputs.tag }}" ]]; then
+            echo "Tag was left empty. Assuming default tag: 0.1-ubuntu"
+            echo "tag=0.1-ubuntu" >> $GITHUB_ENV
+          fi
       - name: Checkout code
         uses: actions/checkout@v4.2.2
 
