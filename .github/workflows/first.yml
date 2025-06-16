@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '21/**' # Ignore changes in the 21 directory
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:

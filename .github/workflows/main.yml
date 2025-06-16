@@ -1,8 +1,10 @@
-name: First Workflow
+name: 22. Docker Build and Push
 on:
   push:
     branches:
       - main
+    paths:
+      - '22/**' # Trigger only if files in the 21 directory are changed
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
