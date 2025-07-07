@@ -1,0 +1,36 @@
+2025-07-07 19:12:07,607 - root - ERROR - Error: Something went wrong
+2025-07-07 19:12:07,607 - root - CRITICAL - Critical error: Immediate attention needed
+2025-07-07 19:12:18,376 - root - DEBUG - Debugging information
+2025-07-07 19:12:18,377 - root - INFO - Informational message
+2025-07-07 19:12:18,377 - root - WARNING - Warning: Something might be wrong
+2025-07-07 19:12:18,377 - root - ERROR - Error: Something went wrong
+2025-07-07 19:12:18,377 - root - CRITICAL - Critical error: Immediate attention needed
+2025-07-07 19:15:46,720 - root - DEBUG - Debugging information
+2025-07-07 19:15:46,720 - root - INFO - Informational message
+2025-07-07 19:15:46,721 - root - WARNING - Warning: Something might be wrong
+2025-07-07 19:15:46,721 - root - ERROR - Error: Something went wrong
+2025-07-07 19:15:46,722 - root - CRITICAL - Critical error: Immediate attention needed
+2025-07-07 19:15:49,714 - root - ERROR - An unexpected error occurred: name 'x' is not defined
+2025-07-07 19:16:23,732 - root - DEBUG - Debugging information
+2025-07-07 19:16:23,733 - root - INFO - Informational message
+2025-07-07 19:16:23,734 - root - WARNING - Warning: Something might be wrong
+2025-07-07 19:16:23,734 - root - ERROR - Error: Something went wrong
+2025-07-07 19:16:23,734 - root - CRITICAL - Critical error: Immediate attention needed
+2025-07-07 19:16:25,545 - root - ERROR - An unexpected error occurred: name 'x' is not defined
+2025-07-07 19:16:56,579 - root - DEBUG - Debugging information
+2025-07-07 19:16:56,579 - root - INFO - Informational message
+2025-07-07 19:16:56,580 - root - WARNING - Warning: Something might be wrong
+2025-07-07 19:16:56,580 - root - ERROR - Error: Something went wrong
+2025-07-07 19:16:56,580 - root - CRITICAL - Critical error: Immediate attention needed
+2025-07-07 19:17:27,065 - root - DEBUG - Debugging information
+2025-07-07 19:17:27,066 - root - INFO - Informational message
+2025-07-07 19:17:27,066 - root - WARNING - Warning: Something might be wrong
+2025-07-07 19:17:27,067 - root - ERROR - Error: Something went wrong
+2025-07-07 19:17:27,067 - root - CRITICAL - Critical error: Immediate attention needed
+2025-07-07 19:17:29,478 - root - ERROR - An unexpected error occurred: name 'x' is not defined
+2025-07-07 19:17:42,980 - root - DEBUG - Debugging information
+2025-07-07 19:17:42,981 - root - INFO - Informational message
+2025-07-07 19:17:42,981 - root - WARNING - Warning: Something might be wrong
+2025-07-07 19:17:42,981 - root - ERROR - Error: Something went wrong
+2025-07-07 19:17:42,981 - root - CRITICAL - Critical error: Immediate attention needed
+2025-07-07 19:17:45,004 - root - ERROR - An unexpected error occurred: unsupported operand type(s) for /: 'str' and 'str'
