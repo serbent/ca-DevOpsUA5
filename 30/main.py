@@ -13,11 +13,11 @@ def setup_logging():
     )
 """This part setups the logging configuration to log messages to both a file and the console. Also displays the time, logger name, and log level in each message."""
 setup_logging()
-logging.debug("Debugging information")
-logging.info("Informational message")
-logging.warning("Warning: Something might be wrong")
-logging.error("Error: Something went wrong")
-logging.critical("Critical error: Immediate attention needed")
+logging.debug("Debugging information") # 1
+logging.info("Informational message") # 2
+logging.warning("Warning: Something might be wrong") # 3
+logging.error("Error: Something went wrong") # 4
+logging.critical("Critical error: Immediate attention needed") # 5
 
 """Error handling example with math operations"""
 x = input("Enter first number: ")
