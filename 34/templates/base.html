@@ -1,0 +1,32 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #cd1616;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            width: 25%;
+        }
+        p {
+            color: #555;
+        }
+    </style>
+    <title>{% block title %} {% endblock %}</title>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
