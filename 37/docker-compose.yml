@@ -1,4 +1,4 @@
-service:
+services:
   elasticsearch:
     image: elastic/elasticsearch:8.18.4
     container_name: elasticsearch
@@ -11,25 +11,27 @@ service:
       - esdata:/usr/share/elasticsearch/data
 
   kibana:
-    image: kibana:9.0.3
+    image: kibana:8.18.3
     container_name: kibana
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
     ports:
       - "5601:5601"
   logstash:
-    image: logstash:9.0.3
+    image: logstash:8.18.3
     container_name: logstash
     ports:
       - "5044:5044"
     volumes:
-      - ./logstash/config:/usr/share/logstash/config
       - ./logstash/pipeline:/usr/share/logstash/pipeline
   beats:
     image: elastic/filebeat:8.18.4
-    container_name: filebeat
+    container_name: beats
     volumes:
-      - ./filebeat/config:/usr/share/filebeat/config
+      - ./filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml
       - ./logs:/var/log
       # - /var/lib/docker/containers:/var/lib/docker/containers:ro
-    command: filebeat -e -strict.perms=false
+    command: filebeat -e --strict.perms=false
+volumes:
+  esdata:
+    driver: local

@@ -1,0 +1,860 @@
+Jul 17 18:01:25 TheHive-win systemd[1]: rsyslog.service: Sent signal SIGHUP to main process 231 (rsyslogd) on client request.
+Jul 17 18:01:25 TheHive-win systemd[1]: logrotate.service: Deactivated successfully.
+Jul 17 18:01:25 TheHive-win systemd[1]: Finished Rotate log files.
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]: No valid path found for iwconfig
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]: No valid path found for iw
+Jul 17 18:01:25 TheHive-win dbus-daemon[222]: [system] Activating via systemd: service name='org.freedesktop.network1' unit='dbus-org.freedesktop.network1.service' requested by ':1.4' (uid=0 pid=303 comm="/usr/bin/networkctl list --no-pager --no-legend ")
+Jul 17 18:01:25 TheHive-win dbus-daemon[222]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.network1.service': Unit dbus-org.freedesktop.network1.service not found.
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[303]: WARNING: systemd-networkd is not running, output will be incomplete.
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]: ERROR:Unknown state for interface NetworkctlListState(idx=1, name='lo', type='loopback', operational='n/a', administrative='unmanaged'): n/a
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]: Traceback (most recent call last):
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]:   File "/usr/bin/networkd-dispatcher", line 298, in trigger_all
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]:     self.handle_state(iface_name,
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]:   File "/usr/bin/networkd-dispatcher", line 348, in handle_state
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]:     raise UnknownState(operational_state)
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]: UnknownState: n/a
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]: ERROR:Unknown state for interface NetworkctlListState(idx=2, name='eth0', type='ether', operational='n/a', administrative='unmanaged'): n/a
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]: Traceback (most recent call last):
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]:   File "/usr/bin/networkd-dispatcher", line 298, in trigger_all
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]:     self.handle_state(iface_name,
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]:   File "/usr/bin/networkd-dispatcher", line 348, in handle_state
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]:     raise UnknownState(operational_state)
+Jul 17 18:01:25 TheHive-win networkd-dispatcher[227]: UnknownState: n/a
+Jul 17 18:01:25 TheHive-win systemd[1]: Started Dispatcher daemon for systemd-networkd.
+Jul 17 18:01:25 TheHive-win podman[230]: time="2025-07-17T18:01:25+03:00" level=info msg="/usr/bin/podman filtering at log level info"
+Jul 17 18:01:25 TheHive-win podman[229]: time="2025-07-17T18:01:25+03:00" level=info msg="/usr/bin/podman filtering at log level info"
+Jul 17 18:01:25 TheHive-win podman[229]: time="2025-07-17T18:01:25+03:00" level=info msg="[graphdriver] using prior storage driver: overlay"
+Jul 17 18:01:25 TheHive-win podman[230]: time="2025-07-17T18:01:25+03:00" level=info msg="[graphdriver] using prior storage driver: overlay"
+Jul 17 18:01:26 TheHive-win podman[229]: time="2025-07-17T18:01:26+03:00" level=info msg="Found CNI network podman (type=bridge) at /etc/cni/net.d/87-podman-bridge.conflist"
+Jul 17 18:01:26 TheHive-win podman[229]: 2025-07-17 18:01:26.02892378 +0300 EEST m=+0.426176086 system refresh
+Jul 17 18:01:26 TheHive-win podman[229]: time="2025-07-17T18:01:26+03:00" level=info msg="Setting parallel job count to 25"
+Jul 17 18:01:26 TheHive-win podman[230]: time="2025-07-17T18:01:26+03:00" level=info msg="Found CNI network podman (type=bridge) at /etc/cni/net.d/87-podman-bridge.conflist"
+Jul 17 18:01:26 TheHive-win podman[230]: time="2025-07-17T18:01:26+03:00" level=info msg="Setting parallel job count to 25"
+Jul 17 18:01:26 TheHive-win podman[230]: time="2025-07-17T18:01:26+03:00" level=info msg="using systemd socket activation to determine API endpoint"
+Jul 17 18:01:26 TheHive-win podman[230]: time="2025-07-17T18:01:26+03:00" level=info msg="using API endpoint: ''"
+Jul 17 18:01:26 TheHive-win podman[230]: time="2025-07-17T18:01:26+03:00" level=info msg="API service listening on \"/run/podman/podman.sock\""
+Jul 17 18:01:26 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 17 18:01:26 TheHive-win systemd[1]: Finished Podman Start All Containers With Restart Policy Set To Always.
+Jul 17 18:01:26 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 17 18:01:26 TheHive-win systemd[1]: podman-auto-update.service: Deactivated successfully.
+Jul 17 18:01:26 TheHive-win systemd[1]: Finished Podman auto-update service.
+Jul 17 18:01:26 TheHive-win landscape-config[226]: Registered:    False
+Jul 17 18:01:26 TheHive-win landscape-config[226]: Config Path:   /etc/landscape/client.conf
+Jul 17 18:01:26 TheHive-win landscape-config[226]: Data Path      /var/lib/landscape/client
+Jul 17 18:01:26 TheHive-win systemd[1]: landscape-client.service: Skipped due to 'exec-condition'.
+Jul 17 18:01:26 TheHive-win systemd[1]: Condition check resulted in Landscape client daemons being skipped.
+Jul 17 18:01:26 TheHive-win snapd[233]: overlord.go:284: Acquiring state lock file
+Jul 17 18:01:26 TheHive-win snapd[233]: overlord.go:289: Acquired state lock file
+Jul 17 18:01:26 TheHive-win snapd[233]: daemon.go:273: started snapd/2.70 (series 16; classic; devmode; wsl) ubuntu/22.04 (amd64) linux/5.15.167.4-microsoft-stan.
+Jul 17 18:01:26 TheHive-win snapd[233]: daemon.go:367: adjusting startup timeout by 45s (pessimistic estimate of 30s plus 5s per snap)
+Jul 17 18:01:26 TheHive-win snapd[233]: backends.go:68: AppArmor status: apparmor not enabled
+Jul 17 18:01:26 TheHive-win systemd[1]: Started Snap Daemon.
+Jul 17 18:01:26 TheHive-win dbus-daemon[222]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.7' (uid=0 pid=233 comm="/usr/lib/snapd/snapd ")
+Jul 17 18:01:26 TheHive-win systemd[1]: Starting Time & Date Service...
+Jul 17 18:01:26 TheHive-win dbus-daemon[222]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Jul 17 18:01:26 TheHive-win systemd[1]: Started Time & Date Service.
+Jul 17 18:01:26 TheHive-win systemd[1]: Finished Wait until snapd is fully seeded.
+Jul 17 18:01:26 TheHive-win systemd[1]: Condition check resulted in Auto import assertions from block devices being skipped.
+Jul 17 18:01:26 TheHive-win systemd[1]: Reached target Multi-User System.
+Jul 17 18:01:26 TheHive-win systemd[1]: Reached target Graphical Interface.
+Jul 17 18:01:26 TheHive-win systemd[1]: Starting Record Runlevel Change in UTMP...
+Jul 17 18:01:26 TheHive-win systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+Jul 17 18:01:26 TheHive-win systemd[1]: Finished Record Runlevel Change in UTMP.
+Jul 17 18:01:26 TheHive-win systemd[1]: Startup finished in 2.313s.
+Jul 17 18:01:27 TheHive-win systemd[1]: dmesg.service: Deactivated successfully.
+Jul 17 18:01:27 TheHive-win kernel: [  293.151105] TCP: eth0: Driver has suspect GRO implementation, TCP performance may be compromised.
+Jul 17 18:01:27 TheHive-win snapd[233]: storehelpers.go:916: cannot refresh: snap has no updates available: "core22", "snapd", "yq"
+Jul 17 18:01:27 TheHive-win systemd[1]: user.slice: Failed to delete controller cgroups /user.slice, ignoring: Device or resource busy
+Jul 17 18:01:27 TheHive-win systemd[1]: user-1000.slice: Failed to migrate controller cgroups from /user.slice/user-1000.slice, ignoring: Input/output error
+Jul 17 18:01:27 TheHive-win systemd[1]: user-1000.slice: Failed to delete controller cgroups /user.slice/user-1000.slice, ignoring: Device or resource busy
+Jul 17 18:01:27 TheHive-win systemd[1]: Created slice User Slice of UID 1000.
+Jul 17 18:01:27 TheHive-win systemd[1]: Starting User Runtime Directory /run/user/1000...
+Jul 17 18:01:27 TheHive-win systemd[1]: Finished User Runtime Directory /run/user/1000.
+Jul 17 18:01:27 TheHive-win systemd[1]: user@1000.service: Failed to migrate controller cgroups from /user.slice/user-1000.slice/user@1000.service, ignoring: Input/output error
+Jul 17 18:01:27 TheHive-win systemd[1]: Starting User Manager for UID 1000...
+Jul 17 18:01:27 TheHive-win systemd[613]: Failed to attach 613 to compat systemd cgroup /user.slice/user-1000.slice/user@1000.service/init.scope: Permission denied
+Jul 17 18:01:27 TheHive-win systemd[613]: Failed to attach 614 to compat systemd cgroup /user.slice/user-1000.slice/user@1000.service/init.scope: Permission denied
+Jul 17 18:01:28 TheHive-win systemd[613]: Queued start job for default target Main User Target.
+Jul 17 18:01:28 TheHive-win systemd[613]: Created slice User Application Slice.
+Jul 17 18:01:28 TheHive-win systemd[613]: Reached target Paths.
+Jul 17 18:01:28 TheHive-win systemd[613]: Reached target Timers.
+Jul 17 18:01:28 TheHive-win systemd[613]: Listening on GnuPG network certificate management daemon.
+Jul 17 18:01:28 TheHive-win systemd[613]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 17 18:01:28 TheHive-win systemd[613]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 17 18:01:28 TheHive-win systemd[613]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 17 18:01:28 TheHive-win systemd[613]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 17 18:01:28 TheHive-win systemd[613]: Listening on debconf communication socket.
+Jul 17 18:01:28 TheHive-win systemd[613]: Listening on Podman API Socket.
+Jul 17 18:01:28 TheHive-win systemd[613]: Listening on REST API socket for snapd user session agent.
+Jul 17 18:01:28 TheHive-win systemd[613]: Reached target Sockets.
+Jul 17 18:01:28 TheHive-win systemd[613]: Reached target Basic System.
+Jul 17 18:01:28 TheHive-win systemd[613]: Starting Podman API Service...
+Jul 17 18:01:28 TheHive-win systemd[1]: Started User Manager for UID 1000.
+Jul 17 18:01:28 TheHive-win systemd[613]: Started Podman API Service.
+Jul 17 18:01:28 TheHive-win systemd[613]: Reached target Main User Target.
+Jul 17 18:01:28 TheHive-win systemd[613]: Startup finished in 136ms.
+Jul 17 18:01:28 TheHive-win systemd[1]: Started Session 10 of User serpent.
+Jul 17 18:01:28 TheHive-win podman[685]: time="2025-07-17T18:01:28+03:00" level=info msg="/usr/bin/podman filtering at log level info"
+Jul 17 18:01:28 TheHive-win podman[685]: time="2025-07-17T18:01:28+03:00" level=info msg="Found CNI network podman (type=bridge) at /home/serpent/.config/cni/net.d/87-podman.conflist"
+Jul 17 18:01:28 TheHive-win podman[685]: time="2025-07-17T18:01:28+03:00" level=warning msg="\"/\" is not a shared mount, this could cause issues or missing mounts with rootless containers"
+Jul 17 18:01:28 TheHive-win podman[823]: time="2025-07-17T18:01:28+03:00" level=info msg="/usr/bin/podman filtering at log level info"
+Jul 17 18:01:28 TheHive-win podman[823]: time="2025-07-17T18:01:28+03:00" level=info msg="Found CNI network podman (type=bridge) at /home/serpent/.config/cni/net.d/87-podman.conflist"
+Jul 17 18:01:28 TheHive-win podman[823]: 2025-07-17 18:01:28.393746364 +0300 EEST m=+0.192641396 system refresh
+Jul 17 18:01:28 TheHive-win podman[823]: time="2025-07-17T18:01:28+03:00" level=info msg="Setting parallel job count to 25"
+Jul 17 18:01:28 TheHive-win podman[823]: time="2025-07-17T18:01:28+03:00" level=info msg="using systemd socket activation to determine API endpoint"
+Jul 17 18:01:28 TheHive-win podman[823]: time="2025-07-17T18:01:28+03:00" level=info msg="using API endpoint: ''"
+Jul 17 18:01:28 TheHive-win podman[823]: time="2025-07-17T18:01:28+03:00" level=info msg="API service listening on \"/run/user/1000/podman/podman.sock\""
+Jul 17 18:01:31 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 17 18:01:31 TheHive-win systemd[1]: podman.service: Deactivated successfully.
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activating service name='org.freedesktop.systemd1' requested by ':1.0' (uid=1000 pid=685 comm="/usr/bin/podman --log-level=info system service ")
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activating service name='org.freedesktop.systemd1' requested by ':1.0' (uid=1000 pid=685 comm="/usr/bin/podman --log-level=info system service ")
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activating service name='org.freedesktop.systemd1' requested by ':1.2' (uid=1000 pid=685 comm="/usr/bin/podman --log-level=info system service ")
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activating service name='org.freedesktop.systemd1' requested by ':1.2' (uid=1000 pid=685 comm="/usr/bin/podman --log-level=info system service ")
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activating service name='org.freedesktop.systemd1' requested by ':1.4' (uid=1000 pid=685 comm="/usr/bin/podman --log-level=info system service ")
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activating service name='org.freedesktop.systemd1' requested by ':1.4' (uid=1000 pid=685 comm="/usr/bin/podman --log-level=info system service ")
+Jul 17 18:01:33 TheHive-win dbus-daemon[1406]: [session uid=1000 pid=1404] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Jul 17 18:01:33 TheHive-win systemd[613]: podman.service: Unit process 845 (podman pause) remains running after unit stopped.
+Jul 17 18:01:33 TheHive-win systemd[613]: podman.service: Unit process 1406 (dbus-daemon) remains running after unit stopped.
+Jul 17 18:01:56 TheHive-win systemd[1]: systemd-timedated.service: Deactivated successfully.
+Jul 17 18:05:01 TheHive-win CRON[1773]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:06:35 TheHive-win kernel: [  601.635546] mini_init (147): drop_caches: 1
+Jul 17 18:08:32 TheHive-win systemd[1]: Starting Podman auto-update service...
+Jul 17 18:08:32 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 17 18:08:32 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 17 18:08:32 TheHive-win systemd[1]: podman-auto-update.service: Deactivated successfully.
+Jul 17 18:08:32 TheHive-win systemd[1]: Finished Podman auto-update service.
+Jul 17 18:08:56 TheHive-win systemd[1]: Starting Message of the Day...
+Jul 17 18:10:01 TheHive-win CRON[2000]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:10:04 TheHive-win systemd[1]: motd-news.service: Deactivated successfully.
+Jul 17 18:10:04 TheHive-win systemd[1]: Finished Message of the Day.
+Jul 17 18:11:25 TheHive-win rsyslogd: [origin software="rsyslogd" swVersion="8.2112.0" x-pid="231" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Jul 17 18:15:01 TheHive-win CRON[2130]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:16:26 TheHive-win systemd[1]: Starting Cleanup of Temporary Directories...
+Jul 17 18:16:26 TheHive-win systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+Jul 17 18:16:26 TheHive-win systemd[1]: Finished Cleanup of Temporary Directories.
+Jul 17 18:17:01 TheHive-win CRON[2189]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 17 18:20:01 TheHive-win CRON[2265]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:25:01 TheHive-win CRON[2398]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:30:01 TheHive-win CRON[2527]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:35:01 TheHive-win CRON[2656]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:40:01 TheHive-win CRON[2785]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:45:01 TheHive-win CRON[2920]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:46:26 TheHive-win systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 17 18:46:29 TheHive-win systemd[1]: apt-daily-upgrade.service: Deactivated successfully.
+Jul 17 18:46:29 TheHive-win systemd[1]: Finished Daily apt upgrade and clean activities.
+Jul 17 18:47:05 TheHive-win kernel: [ 3031.761506] mini_init (147): drop_caches: 1
+Jul 17 18:50:01 TheHive-win CRON[3117]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 18:55:01 TheHive-win CRON[3251]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:00:01 TheHive-win CRON[3391]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:05:01 TheHive-win CRON[3526]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:10:01 TheHive-win CRON[4117]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:11:05 TheHive-win kernel: [ 4471.653682] mini_init (147): drop_caches: 1
+Jul 17 19:13:05 TheHive-win kernel: [ 4591.596412] mini_init (147): drop_caches: 1
+Jul 17 19:15:01 TheHive-win CRON[4642]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:17:01 TheHive-win CRON[4698]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 17 19:18:35 TheHive-win systemd[1]: Started Daemon for generating UUIDs.
+Jul 17 19:20:01 TheHive-win CRON[5177]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:25:01 TheHive-win CRON[5600]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:30:01 TheHive-win CRON[5976]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:35:01 TheHive-win CRON[6208]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:40:01 TheHive-win CRON[6553]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:45:01 TheHive-win CRON[6686]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:50:01 TheHive-win CRON[6815]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 19:55:01 TheHive-win CRON[6945]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:00:01 TheHive-win CRON[7074]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:05:01 TheHive-win CRON[7203]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:10:01 TheHive-win CRON[7327]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:15:01 TheHive-win CRON[7456]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:17:01 TheHive-win CRON[7511]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 17 20:20:01 TheHive-win CRON[7588]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:25:02 TheHive-win CRON[7719]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:30:02 TheHive-win CRON[7847]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:35:02 TheHive-win CRON[7982]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:40:01 TheHive-win CRON[8110]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:45:01 TheHive-win CRON[8238]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:50:01 TheHive-win CRON[8364]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 20:55:01 TheHive-win CRON[8492]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:00:01 TheHive-win CRON[8625]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:05:01 TheHive-win CRON[8753]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:10:01 TheHive-win CRON[8879]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:15:01 TheHive-win CRON[9009]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:17:01 TheHive-win CRON[9064]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 17 21:20:01 TheHive-win CRON[9144]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:25:01 TheHive-win CRON[9272]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:30:01 TheHive-win CRON[9400]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:35:01 TheHive-win CRON[9525]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:40:01 TheHive-win CRON[9654]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:45:01 TheHive-win CRON[9782]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:50:01 TheHive-win CRON[9908]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 21:55:01 TheHive-win CRON[10036]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 22:00:01 TheHive-win CRON[10168]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 22:01:08 TheHive-win kernel: [14674.056399] hv_utils: TimeSync IC version 4.0
+Jul 17 22:01:25 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 17 22:01:25 TheHive-win systemd[1]: Condition check resulted in Daily apt download activities being skipped.
+Jul 17 22:01:26 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 17 22:02:24 TheHive-win kernel: [14681.182300] WSL (154) ERROR: CheckConnection: getaddrinfo() failed: -5
+Jul 17 22:02:24 TheHive-win kernel: [14732.582836] mini_init (147): drop_caches: 1
+Jul 17 22:01:59 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 17 22:04:21 TheHive-win systemd-timesyncd[166]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+Jul 17 22:04:31 TheHive-win systemd-timesyncd[166]: Timed out waiting for reply from 185.125.190.56:123 (ntp.ubuntu.com).
+Jul 17 22:04:42 TheHive-win systemd-timesyncd[166]: Timed out waiting for reply from 185.125.190.57:123 (ntp.ubuntu.com).
+Jul 17 22:04:52 TheHive-win systemd-timesyncd[166]: Timed out waiting for reply from 185.125.190.58:123 (ntp.ubuntu.com).
+Jul 17 22:05:01 TheHive-win CRON[10281]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 17 22:10:01 TheHive-win CRON[10405]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 18 01:11:30 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 18 01:11:30 TheHive-win systemd[1]: Starting Daily dpkg database backup service...
+Jul 18 01:11:30 TheHive-win systemd[1]: Starting Podman auto-update service...
+Jul 18 01:11:30 TheHive-win systemd[1]: Condition check resulted in Rotate log files being skipped.
+Jul 18 01:11:30 TheHive-win systemd[1]: dpkg-db-backup.service: Deactivated successfully.
+Jul 18 01:11:30 TheHive-win systemd[1]: Finished Daily dpkg database backup service.
+Jul 18 01:11:30 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 18 01:11:30 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 18 01:11:30 TheHive-win systemd[1]: podman-auto-update.service: Deactivated successfully.
+Jul 18 01:11:30 TheHive-win systemd[1]: Finished Podman auto-update service.
+Jul 18 01:11:33 TheHive-win kernel: [15281.391670] hv_utils: TimeSync IC version 4.0
+Jul 21 17:34:19 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:34:19 TheHive-win systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 21 17:34:19 TheHive-win systemd[1]: Starting Daily dpkg database backup service...
+Jul 21 17:34:19 TheHive-win systemd[1]: Starting Online ext4 Metadata Check for All Filesystems...
+Jul 21 17:34:19 TheHive-win systemd[1]: Starting Message of the Day...
+Jul 21 17:34:19 TheHive-win systemd[1]: Starting Podman auto-update service...
+Jul 21 17:34:19 TheHive-win systemd[1]: logrotate.service: Failed to migrate controller cgroups from /system.slice/logrotate.service, ignoring: Input/output error
+Jul 21 17:34:19 TheHive-win systemd[1]: Starting Rotate log files...
+Jul 21 17:34:19 TheHive-win systemd[1]: Starting Daily man-db regeneration...
+Jul 21 17:34:19 TheHive-win systemd[1]: dpkg-db-backup.service: Deactivated successfully.
+Jul 21 17:34:19 TheHive-win systemd[1]: Finished Daily dpkg database backup service.
+Jul 21 17:34:19 TheHive-win systemd[1]: e2scrub_all.service: Deactivated successfully.
+Jul 21 17:34:19 TheHive-win systemd[1]: Finished Online ext4 Metadata Check for All Filesystems.
+Jul 21 17:34:20 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 21 17:34:20 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 21 17:34:20 TheHive-win systemd[1]: podman-auto-update.service: Deactivated successfully.
+Jul 21 17:34:20 TheHive-win systemd[1]: Finished Podman auto-update service.
+Jul 21 17:34:21 TheHive-win systemd[1]: logrotate.service: Deactivated successfully.
+Jul 21 17:34:21 TheHive-win systemd[1]: Finished Rotate log files.
+Jul 21 17:34:25 TheHive-win systemd[1]: man-db.service: Deactivated successfully.
+Jul 21 17:34:25 TheHive-win systemd[1]: Finished Daily man-db regeneration.
+Jul 21 17:34:29 TheHive-win systemd[1]: apt-daily-upgrade.service: Deactivated successfully.
+Jul 21 17:34:29 TheHive-win systemd[1]: Finished Daily apt upgrade and clean activities.
+Jul 21 17:34:32 TheHive-win snapd[233]: storehelpers.go:916: cannot refresh: snap has no updates available: "core22", "snapd", "yq"
+Jul 21 17:35:01 TheHive-win CRON[10710]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 17:35:03 TheHive-win 50-motd-news[10717]:  * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+Jul 21 17:35:03 TheHive-win 50-motd-news[10717]:    just raised the bar for easy, resilient and secure K8s cluster deployment.
+Jul 21 17:35:03 TheHive-win 50-motd-news[10717]:    https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+Jul 21 17:35:03 TheHive-win systemd[1]: motd-news.service: Deactivated successfully.
+Jul 21 17:35:03 TheHive-win systemd[1]: Finished Message of the Day.
+Jul 21 17:35:10 TheHive-win kernel: [15291.404880] WSL (154) ERROR: CheckConnection: getaddrinfo() failed: -5
+Jul 21 17:35:10 TheHive-win kernel: [15333.201671] mini_init (147): drop_caches: 1
+Jul 21 17:35:29 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:35:29 TheHive-win systemd-timesyncd[166]: Initial synchronization to time server 91.189.91.157:123 (ntp.ubuntu.com).
+Jul 21 17:35:29 TheHive-win systemd[1]: Starting Daily apt download activities...
+Jul 21 17:35:30 TheHive-win systemd[1]: Starting Update APT News...
+Jul 21 17:35:30 TheHive-win systemd[1]: Starting Update the local ESM caches...
+Jul 21 17:35:30 TheHive-win systemd[1]: apt-news.service: Deactivated successfully.
+Jul 21 17:35:30 TheHive-win systemd[1]: Finished Update APT News.
+Jul 21 17:35:31 TheHive-win systemd[1]: esm-cache.service: Deactivated successfully.
+Jul 21 17:35:31 TheHive-win systemd[1]: Finished Update the local ESM caches.
+Jul 21 17:35:33 TheHive-win dbus-daemon[222]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.14' (uid=0 pid=11136 comm="/usr/bin/gdbus call --system --dest org.freedeskto")
+Jul 21 17:35:33 TheHive-win systemd[1]: Starting PackageKit Daemon...
+Jul 21 17:35:33 TheHive-win PackageKit: daemon start
+Jul 21 17:35:33 TheHive-win dbus-daemon[222]: [system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.16' (uid=0 pid=11139 comm="/usr/libexec/packagekitd ")
+Jul 21 17:35:33 TheHive-win systemd[1]: Starting Authorization Manager...
+Jul 21 17:35:33 TheHive-win polkitd[11143]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Jul 21 17:35:33 TheHive-win dbus-daemon[222]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Jul 21 17:35:33 TheHive-win systemd[1]: Started Authorization Manager.
+Jul 21 17:35:33 TheHive-win dbus-daemon[222]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Jul 21 17:35:33 TheHive-win systemd[1]: Started PackageKit Daemon.
+Jul 21 17:35:38 TheHive-win systemd[1]: apt-daily.service: Deactivated successfully.
+Jul 21 17:35:38 TheHive-win systemd[1]: Finished Daily apt download activities.
+Jul 21 17:36:11 TheHive-win kernel: [15393.162357] mini_init (147): drop_caches: 1
+Jul 21 17:37:06 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:39:53 TheHive-win systemd-resolved[165]: message repeated 5 times: [ Clock change detected. Flushing caches.]
+Jul 21 17:40:03 TheHive-win CRON[11299]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 17:40:26 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:44:54 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 17:45:03 TheHive-win CRON[11435]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 17:45:28 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:49:56 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 17:50:03 TheHive-win CRON[11583]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 17:50:30 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:51:48 TheHive-win systemd-timesyncd[166]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+Jul 21 17:51:49 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:51:49 TheHive-win systemd-timesyncd[166]: Initial synchronization to time server 185.125.190.58:123 (ntp.ubuntu.com).
+Jul 21 17:52:22 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:54:37 TheHive-win systemd-resolved[165]: message repeated 4 times: [ Clock change detected. Flushing caches.]
+Jul 21 17:55:02 TheHive-win CRON[11761]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 17:55:10 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 17:59:37 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:00:03 TheHive-win CRON[12076]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:00:10 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:04:38 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:05:03 TheHive-win CRON[12250]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:05:12 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:08:34 TheHive-win systemd-resolved[165]: message repeated 6 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:08:34 TheHive-win systemd[1]: Starting Daily apt download activities...
+Jul 21 18:08:35 TheHive-win systemd[1]: apt-daily.service: Deactivated successfully.
+Jul 21 18:08:35 TheHive-win systemd[1]: Finished Daily apt download activities.
+Jul 21 18:09:07 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:09:41 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:10:04 TheHive-win CRON[12472]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:10:30 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:14:57 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:15:04 TheHive-win CRON[12652]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:15:30 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:16:37 TheHive-win systemd-resolved[165]: message repeated 2 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:17:04 TheHive-win CRON[12731]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 21 18:17:11 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:19:59 TheHive-win systemd-resolved[165]: message repeated 5 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:20:04 TheHive-win CRON[12840]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:20:32 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:25:01 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:25:04 TheHive-win CRON[13026]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:25:34 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:30:02 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:30:04 TheHive-win CRON[13214]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:30:36 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:34:31 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:35:02 TheHive-win CRON[13400]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:35:04 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:39:36 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:40:03 TheHive-win CRON[13584]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:40:10 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:44:41 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:45:04 TheHive-win CRON[13766]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:45:15 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:49:46 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:50:04 TheHive-win CRON[13950]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:50:19 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:54:50 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 18:55:04 TheHive-win CRON[14135]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 18:55:24 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 18:59:57 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:00:04 TheHive-win CRON[14324]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:00:31 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:05:04 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:05:05 TheHive-win CRON[14506]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:05:38 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:09:36 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:10:02 TheHive-win CRON[14694]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:10:10 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:14:43 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:15:05 TheHive-win CRON[14891]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:15:17 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:16:59 TheHive-win systemd-resolved[165]: message repeated 3 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:17:05 TheHive-win CRON[14969]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 21 19:17:33 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:18:53 TheHive-win kernel: [16327.955441] WSL (154) ERROR: CheckConnection: getaddrinfo() failed: -5
+Jul 21 19:18:53 TheHive-win kernel: [21555.421352] mini_init (147): drop_caches: 1
+Jul 21 19:19:50 TheHive-win systemd-resolved[165]: message repeated 4 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:20:05 TheHive-win CRON[15127]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:20:24 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:24:09 TheHive-win kernel: [21872.706910] mini_init (147): drop_caches: 1
+Jul 21 19:24:56 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:25:05 TheHive-win CRON[15398]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:25:30 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:30:02 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:30:05 TheHive-win CRON[16075]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:30:35 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:34:33 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:35:02 TheHive-win CRON[16280]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:35:07 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:39:39 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:40:05 TheHive-win CRON[16463]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:40:13 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:44:46 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:45:05 TheHive-win CRON[16642]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:45:20 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:49:53 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:50:05 TheHive-win CRON[16821]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:50:27 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:55:00 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 19:55:04 TheHive-win CRON[16998]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 19:55:34 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 19:59:33 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:00:02 TheHive-win CRON[17182]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:00:07 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:04:40 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:05:05 TheHive-win CRON[17363]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:05:14 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:09:47 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:10:05 TheHive-win CRON[17540]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:10:21 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:14:54 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:15:05 TheHive-win CRON[17719]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:15:28 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:16:36 TheHive-win systemd-resolved[165]: message repeated 2 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:17:03 TheHive-win CRON[17788]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 21 20:17:10 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:20:00 TheHive-win systemd-resolved[165]: message repeated 5 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:20:05 TheHive-win CRON[17898]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:20:35 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:24:33 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:25:03 TheHive-win CRON[18076]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:25:07 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:29:40 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:30:05 TheHive-win CRON[18250]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:30:14 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:34:46 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:35:04 TheHive-win CRON[18424]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:35:20 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:39:53 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:40:05 TheHive-win CRON[18609]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:40:27 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:45:00 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:45:05 TheHive-win CRON[18809]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:45:34 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:49:32 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:50:03 TheHive-win CRON[18995]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:50:06 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:54:39 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 20:55:05 TheHive-win CRON[19194]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 20:55:14 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 20:59:47 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:00:05 TheHive-win CRON[19387]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:00:21 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:04:54 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:05:05 TheHive-win CRON[19555]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:05:28 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:10:00 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:10:04 TheHive-win CRON[19712]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:10:34 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:14:31 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:15:02 TheHive-win CRON[19879]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:15:05 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:16:47 TheHive-win systemd-resolved[165]: message repeated 3 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:17:04 TheHive-win CRON[19951]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 21 21:17:21 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:19:36 TheHive-win systemd-resolved[165]: message repeated 4 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:20:03 TheHive-win CRON[20056]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:20:10 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:24:41 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:25:05 TheHive-win CRON[20236]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:25:15 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:29:48 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:30:05 TheHive-win CRON[20413]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:30:22 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:34:54 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:35:04 TheHive-win CRON[20598]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:35:28 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:40:00 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:40:04 TheHive-win CRON[20786]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:40:34 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:44:32 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:45:03 TheHive-win CRON[20965]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:45:06 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:49:38 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:50:03 TheHive-win CRON[21145]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:50:12 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:54:59 TheHive-win systemd-resolved[165]: message repeated 8 times: [ Clock change detected. Flushing caches.]
+Jul 21 21:55:03 TheHive-win CRON[21324]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 21:55:32 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 21:59:57 TheHive-win systemd-resolved[165]: message repeated 7 times: [ Clock change detected. Flushing caches.]
+Jul 21 22:00:03 TheHive-win CRON[21517]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 21 22:00:31 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 21 22:00:52 TheHive-win kernel: [31269.617009] WSL (154) ERROR: CheckConnection: getaddrinfo() failed: -5
+Jul 21 22:00:52 TheHive-win kernel: [31274.275889] hv_utils: TimeSync IC version 4.0
+Jul 22 17:58:03 TheHive-win systemd-resolved[165]: message repeated 2 times: [ Clock change detected. Flushing caches.]
+Jul 22 17:58:04 TheHive-win systemd[1]: Starting Daily apt download activities...
+Jul 22 17:58:04 TheHive-win systemd[1]: Starting Daily dpkg database backup service...
+Jul 22 17:58:04 TheHive-win systemd[1]: Starting Message of the Day...
+Jul 22 17:58:04 TheHive-win systemd[1]: Starting Podman auto-update service...
+Jul 22 17:58:04 TheHive-win systemd[1]: logrotate.service: Failed to migrate controller cgroups from /system.slice/logrotate.service, ignoring: Input/output error
+Jul 22 17:58:04 TheHive-win systemd[1]: logrotate.service: Failed to delete controller cgroups /system.slice/logrotate.service, ignoring: Device or resource busy
+Jul 22 17:58:05 TheHive-win systemd[1]: Starting Rotate log files...
+Jul 22 17:58:05 TheHive-win systemd[1]: Starting Daily man-db regeneration...
+Jul 22 17:58:05 TheHive-win systemd[1]: dpkg-db-backup.service: Deactivated successfully.
+Jul 22 17:58:05 TheHive-win systemd[1]: Finished Daily dpkg database backup service.
+Jul 22 17:58:08 TheHive-win systemd[1]: logrotate.service: Deactivated successfully.
+Jul 22 17:58:08 TheHive-win systemd[1]: Finished Rotate log files.
+Jul 22 17:58:09 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 22 17:58:09 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 22 17:58:09 TheHive-win systemd[1]: podman-auto-update.service: Deactivated successfully.
+Jul 22 17:58:09 TheHive-win systemd[1]: Finished Podman auto-update service.
+Jul 22 17:58:09 TheHive-win systemd[1]: Starting Update APT News...
+Jul 22 17:58:09 TheHive-win systemd[1]: Starting Update the local ESM caches...
+Jul 22 17:58:10 TheHive-win systemd[1]: man-db.service: Deactivated successfully.
+Jul 22 17:58:10 TheHive-win systemd[1]: Finished Daily man-db regeneration.
+Jul 22 17:58:18 TheHive-win systemd[1]: esm-cache.service: Deactivated successfully.
+Jul 22 17:58:18 TheHive-win systemd[1]: Finished Update the local ESM caches.
+Jul 22 17:58:18 TheHive-win systemd[1]: motd-news.service: Deactivated successfully.
+Jul 22 17:58:18 TheHive-win systemd[1]: Finished Message of the Day.
+Jul 22 17:58:34 TheHive-win systemd[1]: apt-daily.service: Deactivated successfully.
+Jul 22 17:58:34 TheHive-win systemd[1]: Finished Daily apt download activities.
+Jul 22 17:58:34 TheHive-win systemd[1]: Starting Daily apt upgrade and clean activities...
+Jul 22 17:58:36 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 22 17:58:53 TheHive-win systemd[1]: apt-daily-upgrade.service: Deactivated successfully.
+Jul 22 17:58:53 TheHive-win systemd[1]: Finished Daily apt upgrade and clean activities.
+Jul 22 17:59:10 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 22 17:59:30 TheHive-win snapd[233]: storehelpers.go:916: cannot refresh: snap has no updates available: "core22", "snapd", "yq"
+Jul 22 18:00:03 TheHive-win CRON[22622]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:00:08 TheHive-win systemd[1]: apt-news.service: Deactivated successfully.
+Jul 22 18:00:08 TheHive-win systemd[1]: Finished Update APT News.
+Jul 22 18:05:01 TheHive-win CRON[22799]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:08:42 TheHive-win kernel: [31292.485534] WSL (154) ERROR: CheckConnection: getaddrinfo() failed: -5
+Jul 22 18:08:42 TheHive-win kernel: [31913.632213] mini_init (147): drop_caches: 1
+Jul 22 18:10:01 TheHive-win CRON[22978]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:15:01 TheHive-win CRON[23162]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:17:01 TheHive-win CRON[23235]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 22 18:20:01 TheHive-win CRON[23348]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:25:01 TheHive-win CRON[23532]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:30:01 TheHive-win CRON[23710]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:35:01 TheHive-win CRON[23892]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:40:01 TheHive-win CRON[24075]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:45:01 TheHive-win CRON[24260]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:50:01 TheHive-win CRON[24446]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 18:55:01 TheHive-win CRON[24629]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:00:01 TheHive-win CRON[24813]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:04:30 TheHive-win snapd[233]: storehelpers.go:916: cannot refresh: snap has no updates available: "core22", "snapd", "yq"
+Jul 22 19:05:01 TheHive-win CRON[24999]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:10:01 TheHive-win CRON[25191]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:15:01 TheHive-win CRON[25386]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:17:01 TheHive-win CRON[25463]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Jul 22 19:20:01 TheHive-win CRON[25580]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:25:01 TheHive-win CRON[25763]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:30:01 TheHive-win CRON[26474]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:35:01 TheHive-win CRON[26651]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:36:43 TheHive-win systemd[1]: mnt-wsl-podman\x2dsockets-podman\x2dmachine\x2ddefault-podman\x2droot.sock.mount: Deactivated successfully.
+Jul 22 19:36:43 TheHive-win systemd[1]: mnt-wsl-podman\x2dsockets-podman\x2dmachine\x2ddefault-podman\x2duser.sock.mount: Deactivated successfully.
+Jul 22 19:37:43 TheHive-win kernel: [37255.235767] systemd-journald[37]: Received SIGTERM from PID 1 (systemd-shutdow).
+Jul 22 19:37:58 TheHive-win kernel: [37270.290511] Exception: 
+Jul 22 19:37:58 TheHive-win kernel: [37270.290518] Operation canceled @p9io.cpp:258 (AcceptAsync)
+Jul 22 19:37:58 TheHive-win kernel: [37270.290521] 
+Jul 22 19:37:58 TheHive-win kernel: [37270.293358] WSL (1 - init()) ERROR: InitEntryUtilityVm:2424: Init has exited. Terminating distribution
+Jul 22 19:38:40 TheHive-win kernel: [37312.448154] scsi 0:0:0:4: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+Jul 22 19:38:40 TheHive-win kernel: [37312.456193] sd 0:0:0:4: Attached scsi generic sg4 type 0
+Jul 22 19:38:40 TheHive-win kernel: [37312.458319] sd 0:0:0:4: [sde] 2147483648 512-byte logical blocks: (1.10 TB/1.00 TiB)
+Jul 22 19:38:40 TheHive-win kernel: [37312.458327] sd 0:0:0:4: [sde] 4096-byte physical blocks
+Jul 22 19:38:40 TheHive-win kernel: [37312.458557] sd 0:0:0:4: [sde] Write Protect is off
+Jul 22 19:38:40 TheHive-win kernel: [37312.458597] sd 0:0:0:4: [sde] Mode Sense: 0f 00 00 00
+Jul 22 19:38:40 TheHive-win kernel: [37312.459787] sd 0:0:0:4: [sde] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Jul 22 19:38:40 TheHive-win kernel: [37312.478355] sd 0:0:0:4: [sde] Attached SCSI disk
+Jul 22 19:38:41 TheHive-win systemd-udevd[26815]: sde: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sde' failed with exit code 1.
+Jul 22 19:38:41 TheHive-win kernel: [37312.768140] EXT4-fs (sde): mounted filesystem with ordered data mode. Opts: discard,errors=remount-ro,data=ordered. Quota mode: none.
+Jul 22 19:38:41 TheHive-win kernel: [37313.374256] scsi 0:0:0:5: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+Jul 22 19:38:41 TheHive-win kernel: [37313.379351] sd 0:0:0:5: Attached scsi generic sg5 type 0
+Jul 22 19:38:41 TheHive-win kernel: [37313.380258] sd 0:0:0:5: [sdf] 2147483648 512-byte logical blocks: (1.10 TB/1.00 TiB)
+Jul 22 19:38:41 TheHive-win kernel: [37313.380262] sd 0:0:0:5: [sdf] 4096-byte physical blocks
+Jul 22 19:38:41 TheHive-win kernel: [37313.380345] sd 0:0:0:5: [sdf] Write Protect is off
+Jul 22 19:38:41 TheHive-win kernel: [37313.380348] sd 0:0:0:5: [sdf] Mode Sense: 0f 00 00 00
+Jul 22 19:38:41 TheHive-win kernel: [37313.380598] sd 0:0:0:5: [sdf] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Jul 22 19:38:41 TheHive-win kernel: [37313.385522] sd 0:0:0:5: [sdf] Attached SCSI disk
+Jul 22 19:38:41 TheHive-win systemd-udevd[26815]: sdf: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdf' failed with exit code 1.
+Jul 22 19:38:41 TheHive-win kernel: [37313.445737] EXT4-fs (sde): mounted filesystem with ordered data mode. Opts: discard,errors=remount-ro,data=ordered. Quota mode: none.
+Jul 22 19:38:42 TheHive-win kernel: [37313.758263] FS-Cache: Duplicate cookie detected
+Jul 22 19:38:42 TheHive-win kernel: [37313.758665] FS-Cache: O-cookie c=0003f217 [p=00000002 fl=222 nc=0 na=1]
+Jul 22 19:38:42 TheHive-win kernel: [37313.758991] FS-Cache: O-cookie d=000000006502267e{9P.session} n=0000000094582e29
+Jul 22 19:38:42 TheHive-win kernel: [37313.759312] FS-Cache: O-key=[10] '34323938353931373736'
+Jul 22 19:38:42 TheHive-win kernel: [37313.759519] FS-Cache: N-cookie c=0003f218 [p=00000002 fl=2 nc=0 na=1]
+Jul 22 19:38:42 TheHive-win kernel: [37313.759762] FS-Cache: N-cookie d=000000006502267e{9P.session} n=00000000815b56a4
+Jul 22 19:38:42 TheHive-win kernel: [37313.760157] FS-Cache: N-key=[10] '34323938353931373736'
+Jul 22 19:38:42 TheHive-win kernel: [37313.778314] WSL (1 - init(docker-desktop)) ERROR: ConfigApplyWindowsLibPath:2542: open /etc/ld.so.conf.d/ld.wsl.conf failed 2
+Jul 22 19:38:42 TheHive-win kernel: [37313.810376] WSL (1 - init(docker-desktop)) WARNING: /usr/share/zoneinfo/Europe/Vilnius not found. Is the tzdata package installed?
+Jul 22 19:38:42 TheHive-win kernel: [37314.247717] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+Jul 22 19:38:42 TheHive-win kernel: [37314.250899] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jul 22 19:38:42 TheHive-win kernel: [37314.251579] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jul 22 19:38:42 TheHive-win kernel: [37314.252190] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jul 22 19:38:42 TheHive-win kernel: [37314.253222] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Jul 22 19:38:42 TheHive-win kernel: [37314.255791] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jul 22 19:38:42 TheHive-win kernel: [37314.256421] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jul 22 19:38:42 TheHive-win kernel: [37314.256988] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -22
+Jul 22 19:38:42 TheHive-win kernel: [37314.258386] misc dxg: dxgk: dxgkio_query_adapter_info: Ioctl failed: -2
+Jul 22 19:38:42 TheHive-win kernel: [37314.346164] EXT4-fs (sdf): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Jul 22 19:38:44 TheHive-win systemd[1]: Created slice User Slice of UID 0.
+Jul 22 19:38:44 TheHive-win systemd[1]: Starting User Runtime Directory /run/user/0...
+Jul 22 19:38:44 TheHive-win systemd[1]: Finished User Runtime Directory /run/user/0.
+Jul 22 19:38:44 TheHive-win systemd[1]: Starting User Manager for UID 0...
+Jul 22 19:38:44 TheHive-win systemd[26923]: Queued start job for default target Main User Target.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Created slice User Application Slice.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Reached target Paths.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Reached target Timers.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Listening on GnuPG network certificate management daemon.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jul 22 19:38:44 TheHive-win systemd[26923]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jul 22 19:38:44 TheHive-win systemd[26923]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jul 22 19:38:44 TheHive-win systemd[26923]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Listening on debconf communication socket.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Listening on Podman API Socket.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Listening on REST API socket for snapd user session agent.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Reached target Sockets.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Reached target Basic System.
+Jul 22 19:38:44 TheHive-win systemd[1]: Started User Manager for UID 0.
+Jul 22 19:38:44 TheHive-win systemd[1]: Started Session 146 of User root.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Starting Podman API Service...
+Jul 22 19:38:44 TheHive-win systemd[26923]: Started Podman API Service.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Reached target Main User Target.
+Jul 22 19:38:44 TheHive-win systemd[26923]: Startup finished in 180ms.
+Jul 22 19:38:44 TheHive-win podman[26937]: time="2025-07-22T19:38:44+03:00" level=info msg="/usr/bin/podman filtering at log level info"
+Jul 22 19:38:44 TheHive-win podman[26937]: time="2025-07-22T19:38:44+03:00" level=info msg="[graphdriver] using prior storage driver: overlay"
+Jul 22 19:38:44 TheHive-win podman[26937]: time="2025-07-22T19:38:44+03:00" level=info msg="Found CNI network podman (type=bridge) at /etc/cni/net.d/87-podman-bridge.conflist"
+Jul 22 19:38:44 TheHive-win podman[26937]: time="2025-07-22T19:38:44+03:00" level=info msg="Setting parallel job count to 25"
+Jul 22 19:38:44 TheHive-win podman[26937]: time="2025-07-22T19:38:44+03:00" level=info msg="using systemd socket activation to determine API endpoint"
+Jul 22 19:38:44 TheHive-win podman[26937]: time="2025-07-22T19:38:44+03:00" level=info msg="using API endpoint: ''"
+Jul 22 19:38:44 TheHive-win podman[26937]: time="2025-07-22T19:38:44+03:00" level=info msg="API service listening on \"/run/user/0/podman/podman.sock\""
+Jul 22 19:38:49 TheHive-win kernel: [37320.914267] loop0: detected capacity change from 0 to 1089380
+Jul 22 19:38:49 TheHive-win kernel: [37320.927413] ISO 9660 Extensions: Microsoft Joliet Level 3
+Jul 22 19:38:49 TheHive-win kernel: [37320.928043] ISO 9660 Extensions: RRIP_1991A
+Jul 22 19:38:49 TheHive-win systemd[1]: var-lib-containers-storage-overlay.mount: Deactivated successfully.
+Jul 22 19:38:59 TheHive-win kernel: [37330.840867] loop1: detected capacity change from 0 to 1279932
+Jul 22 19:38:59 TheHive-win kernel: [37330.851684] ISO 9660 Extensions: RRIP_1991A
+Jul 22 19:38:59 TheHive-win kernel: [37330.955180] new mount options do not match the existing superblock, will be ignored
+Jul 22 19:38:59 TheHive-win kernel: [37330.958156] netlink: 'init': attribute type 4 has an invalid length.
+Jul 22 19:38:59 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 22 19:38:59 TheHive-win kernel: [37331.107616] IPv6: ADDRCONF(NETDEV_CHANGE): services1: link becomes ready
+Jul 22 19:38:59 TheHive-win kernel: [37331.269284] capability: warning: `lifecycle-serve' uses 32-bit capabilities (legacy support in use)
+Jul 22 19:39:00 TheHive-win kernel: [37331.998841] IPv6: ADDRCONF(NETDEV_CHANGE): services0: link becomes ready
+Jul 22 19:39:42 TheHive-win kernel: [37373.797628] mini_init (147): drop_caches: 1
+Jul 22 19:39:59 TheHive-win systemd-resolved[165]: message repeated 2 times: [ Clock change detected. Flushing caches.]
+Jul 22 19:39:59 TheHive-win systemd[1]: Starting Daily apt download activities...
+Jul 22 19:40:00 TheHive-win systemd[1]: apt-daily.service: Deactivated successfully.
+Jul 22 19:40:00 TheHive-win systemd[1]: Finished Daily apt download activities.
+Jul 22 19:40:01 TheHive-win CRON[27584]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:40:29 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 22 19:43:29 TheHive-win systemd-resolved[165]: message repeated 6 times: [ Clock change detected. Flushing caches.]
+Jul 22 19:43:39 TheHive-win systemd-timesyncd[166]: Timed out waiting for reply from 185.125.190.58:123 (ntp.ubuntu.com).
+Jul 22 19:43:39 TheHive-win systemd-timesyncd[166]: Initial synchronization to time server 185.125.190.57:123 (ntp.ubuntu.com).
+Jul 22 19:43:59 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 22 19:44:59 TheHive-win systemd-resolved[165]: message repeated 2 times: [ Clock change detected. Flushing caches.]
+Jul 22 19:45:01 TheHive-win CRON[28956]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:45:29 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 22 19:46:29 TheHive-win kernel: [37614.711144] WSL (154) ERROR: CheckConnection: getaddrinfo() failed: -5
+Jul 22 19:46:29 TheHive-win kernel: [37780.832823] br-a4fd29cfb308: port 1(veth9dbe9e1) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37780.834101] br-a4fd29cfb308: port 1(veth9dbe9e1) entered disabled state
+Jul 22 19:46:29 TheHive-win kernel: [37780.836165] device veth9dbe9e1 entered promiscuous mode
+Jul 22 19:46:29 TheHive-win kernel: [37780.895489] br-a4fd29cfb308: port 2(veth9331d25) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37780.895496] br-a4fd29cfb308: port 2(veth9331d25) entered disabled state
+Jul 22 19:46:29 TheHive-win kernel: [37780.895571] device veth9331d25 entered promiscuous mode
+Jul 22 19:46:29 TheHive-win kernel: [37780.896061] br-a4fd29cfb308: port 2(veth9331d25) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37780.896066] br-a4fd29cfb308: port 2(veth9331d25) entered forwarding state
+Jul 22 19:46:29 TheHive-win kernel: [37780.896529] br-a4fd29cfb308: port 2(veth9331d25) entered disabled state
+Jul 22 19:46:29 TheHive-win kernel: [37780.911019] eth0: renamed from veth6a5ab0e
+Jul 22 19:46:29 TheHive-win kernel: [37780.989634] br-a4fd29cfb308: port 3(veth376e27b) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37780.989644] br-a4fd29cfb308: port 3(veth376e27b) entered disabled state
+Jul 22 19:46:29 TheHive-win kernel: [37780.989886] device veth376e27b entered promiscuous mode
+Jul 22 19:46:29 TheHive-win kernel: [37780.990132] br-a4fd29cfb308: port 3(veth376e27b) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37780.990136] br-a4fd29cfb308: port 3(veth376e27b) entered forwarding state
+Jul 22 19:46:29 TheHive-win kernel: [37780.990282] IPv6: ADDRCONF(NETDEV_CHANGE): br-a4fd29cfb308: link becomes ready
+Jul 22 19:46:29 TheHive-win kernel: [37780.990437] br-a4fd29cfb308: port 3(veth376e27b) entered disabled state
+Jul 22 19:46:29 TheHive-win kernel: [37780.991704] IPv6: ADDRCONF(NETDEV_CHANGE): veth9dbe9e1: link becomes ready
+Jul 22 19:46:29 TheHive-win kernel: [37780.991747] br-a4fd29cfb308: port 1(veth9dbe9e1) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37780.991750] br-a4fd29cfb308: port 1(veth9dbe9e1) entered forwarding state
+Jul 22 19:46:29 TheHive-win kernel: [37780.996448] eth0: renamed from veth1aa14f3
+Jul 22 19:46:29 TheHive-win kernel: [37781.112924] IPv6: ADDRCONF(NETDEV_CHANGE): veth9331d25: link becomes ready
+Jul 22 19:46:29 TheHive-win kernel: [37781.112966] br-a4fd29cfb308: port 2(veth9331d25) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37781.112969] br-a4fd29cfb308: port 2(veth9331d25) entered forwarding state
+Jul 22 19:46:29 TheHive-win kernel: [37781.113999] br-a4fd29cfb308: port 4(veth62b8371) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37781.114005] br-a4fd29cfb308: port 4(veth62b8371) entered disabled state
+Jul 22 19:46:29 TheHive-win kernel: [37781.114079] device veth62b8371 entered promiscuous mode
+Jul 22 19:46:29 TheHive-win kernel: [37781.114376] br-a4fd29cfb308: port 4(veth62b8371) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37781.114380] br-a4fd29cfb308: port 4(veth62b8371) entered forwarding state
+Jul 22 19:46:29 TheHive-win kernel: [37781.119739] eth0: renamed from veth8d5f786
+Jul 22 19:46:29 TheHive-win kernel: [37781.201441] br-a4fd29cfb308: port 4(veth62b8371) entered disabled state
+Jul 22 19:46:29 TheHive-win kernel: [37781.201628] IPv6: ADDRCONF(NETDEV_CHANGE): veth376e27b: link becomes ready
+Jul 22 19:46:29 TheHive-win kernel: [37781.204864] br-a4fd29cfb308: port 3(veth376e27b) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37781.204871] br-a4fd29cfb308: port 3(veth376e27b) entered forwarding state
+Jul 22 19:46:29 TheHive-win kernel: [37781.218932] eth0: renamed from vethd4441e3
+Jul 22 19:46:29 TheHive-win kernel: [37781.294234] IPv6: ADDRCONF(NETDEV_CHANGE): veth62b8371: link becomes ready
+Jul 22 19:46:29 TheHive-win kernel: [37781.294287] br-a4fd29cfb308: port 4(veth62b8371) entered blocking state
+Jul 22 19:46:29 TheHive-win kernel: [37781.294291] br-a4fd29cfb308: port 4(veth62b8371) entered forwarding state
+Jul 22 19:46:30 TheHive-win kernel: [37781.515289] br-a4fd29cfb308: port 1(veth9dbe9e1) entered disabled state
+Jul 22 19:46:30 TheHive-win kernel: [37781.515380] veth6a5ab0e: renamed from eth0
+Jul 22 19:46:30 TheHive-win kernel: [37781.615673] br-a4fd29cfb308: port 1(veth9dbe9e1) entered disabled state
+Jul 22 19:46:30 TheHive-win kernel: [37781.617466] device veth9dbe9e1 left promiscuous mode
+Jul 22 19:46:30 TheHive-win kernel: [37781.617478] br-a4fd29cfb308: port 1(veth9dbe9e1) entered disabled state
+Jul 22 19:47:03 TheHive-win kernel: [37815.102420] br-a4fd29cfb308: port 3(veth376e27b) entered disabled state
+Jul 22 19:47:03 TheHive-win kernel: [37815.102515] veth8d5f786: renamed from eth0
+Jul 22 19:47:03 TheHive-win kernel: [37815.199102] br-a4fd29cfb308: port 3(veth376e27b) entered disabled state
+Jul 22 19:47:03 TheHive-win kernel: [37815.201069] device veth376e27b left promiscuous mode
+Jul 22 19:47:03 TheHive-win kernel: [37815.201078] br-a4fd29cfb308: port 3(veth376e27b) entered disabled state
+Jul 22 19:48:47 TheHive-win kernel: [37919.030198] br-a4fd29cfb308: port 2(veth9331d25) entered disabled state
+Jul 22 19:48:47 TheHive-win kernel: [37919.030280] veth1aa14f3: renamed from eth0
+Jul 22 19:48:47 TheHive-win kernel: [37919.161461] br-a4fd29cfb308: port 2(veth9331d25) entered disabled state
+Jul 22 19:48:47 TheHive-win kernel: [37919.162197] device veth9331d25 left promiscuous mode
+Jul 22 19:48:47 TheHive-win kernel: [37919.162203] br-a4fd29cfb308: port 2(veth9331d25) entered disabled state
+Jul 22 19:48:55 TheHive-win kernel: [37926.741025] br-a4fd29cfb308: port 4(veth62b8371) entered disabled state
+Jul 22 19:48:55 TheHive-win kernel: [37926.741478] vethd4441e3: renamed from eth0
+Jul 22 19:48:55 TheHive-win kernel: [37926.870717] br-a4fd29cfb308: port 4(veth62b8371) entered disabled state
+Jul 22 19:48:55 TheHive-win kernel: [37926.871399] device veth62b8371 left promiscuous mode
+Jul 22 19:48:55 TheHive-win kernel: [37926.871404] br-a4fd29cfb308: port 4(veth62b8371) entered disabled state
+Jul 22 19:49:02 TheHive-win kernel: [37934.063858] br-a4fd29cfb308: port 1(veth30b55c5) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.063889] br-a4fd29cfb308: port 1(veth30b55c5) entered disabled state
+Jul 22 19:49:02 TheHive-win kernel: [37934.063994] device veth30b55c5 entered promiscuous mode
+Jul 22 19:49:02 TheHive-win kernel: [37934.087647] br-a4fd29cfb308: port 2(veth8eb847e) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.087653] br-a4fd29cfb308: port 2(veth8eb847e) entered disabled state
+Jul 22 19:49:02 TheHive-win kernel: [37934.087713] device veth8eb847e entered promiscuous mode
+Jul 22 19:49:02 TheHive-win kernel: [37934.087807] br-a4fd29cfb308: port 2(veth8eb847e) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.087810] br-a4fd29cfb308: port 2(veth8eb847e) entered forwarding state
+Jul 22 19:49:02 TheHive-win kernel: [37934.087982] br-a4fd29cfb308: port 2(veth8eb847e) entered disabled state
+Jul 22 19:49:02 TheHive-win kernel: [37934.098255] br-a4fd29cfb308: port 3(vethaf5c7ed) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.098261] br-a4fd29cfb308: port 3(vethaf5c7ed) entered disabled state
+Jul 22 19:49:02 TheHive-win kernel: [37934.098351] device vethaf5c7ed entered promiscuous mode
+Jul 22 19:49:02 TheHive-win kernel: [37934.098522] br-a4fd29cfb308: port 3(vethaf5c7ed) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.098525] br-a4fd29cfb308: port 3(vethaf5c7ed) entered forwarding state
+Jul 22 19:49:02 TheHive-win kernel: [37934.098670] br-a4fd29cfb308: port 3(vethaf5c7ed) entered disabled state
+Jul 22 19:49:02 TheHive-win kernel: [37934.110598] eth0: renamed from veth0a00821
+Jul 22 19:49:02 TheHive-win kernel: [37934.185885] br-a4fd29cfb308: port 4(vethb53c80c) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.185893] br-a4fd29cfb308: port 4(vethb53c80c) entered disabled state
+Jul 22 19:49:02 TheHive-win kernel: [37934.186014] device vethb53c80c entered promiscuous mode
+Jul 22 19:49:02 TheHive-win kernel: [37934.186307] IPv6: ADDRCONF(NETDEV_CHANGE): veth30b55c5: link becomes ready
+Jul 22 19:49:02 TheHive-win kernel: [37934.186349] br-a4fd29cfb308: port 1(veth30b55c5) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.186353] br-a4fd29cfb308: port 1(veth30b55c5) entered forwarding state
+Jul 22 19:49:02 TheHive-win kernel: [37934.186754] br-a4fd29cfb308: port 4(vethb53c80c) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.186758] br-a4fd29cfb308: port 4(vethb53c80c) entered forwarding state
+Jul 22 19:49:02 TheHive-win kernel: [37934.192063] eth0: renamed from veth91cb316
+Jul 22 19:49:02 TheHive-win kernel: [37934.225447] eth0: renamed from veth97d2174
+Jul 22 19:49:02 TheHive-win kernel: [37934.296202] br-a4fd29cfb308: port 4(vethb53c80c) entered disabled state
+Jul 22 19:49:02 TheHive-win kernel: [37934.296245] IPv6: ADDRCONF(NETDEV_CHANGE): veth8eb847e: link becomes ready
+Jul 22 19:49:02 TheHive-win kernel: [37934.296294] br-a4fd29cfb308: port 2(veth8eb847e) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.296297] br-a4fd29cfb308: port 2(veth8eb847e) entered forwarding state
+Jul 22 19:49:02 TheHive-win kernel: [37934.296423] IPv6: ADDRCONF(NETDEV_CHANGE): vethaf5c7ed: link becomes ready
+Jul 22 19:49:02 TheHive-win kernel: [37934.296452] br-a4fd29cfb308: port 3(vethaf5c7ed) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.296455] br-a4fd29cfb308: port 3(vethaf5c7ed) entered forwarding state
+Jul 22 19:49:02 TheHive-win kernel: [37934.302748] eth0: renamed from veth8ca9c1c
+Jul 22 19:49:02 TheHive-win kernel: [37934.380973] IPv6: ADDRCONF(NETDEV_CHANGE): vethb53c80c: link becomes ready
+Jul 22 19:49:02 TheHive-win kernel: [37934.381022] br-a4fd29cfb308: port 4(vethb53c80c) entered blocking state
+Jul 22 19:49:02 TheHive-win kernel: [37934.381026] br-a4fd29cfb308: port 4(vethb53c80c) entered forwarding state
+Jul 22 19:49:31 TheHive-win kernel: [37963.031569] br-a4fd29cfb308: port 4(vethb53c80c) entered disabled state
+Jul 22 19:49:31 TheHive-win kernel: [37963.031703] veth8ca9c1c: renamed from eth0
+Jul 22 19:49:31 TheHive-win kernel: [37963.137874] br-a4fd29cfb308: port 4(vethb53c80c) entered disabled state
+Jul 22 19:49:31 TheHive-win kernel: [37963.138924] device vethb53c80c left promiscuous mode
+Jul 22 19:49:31 TheHive-win kernel: [37963.138930] br-a4fd29cfb308: port 4(vethb53c80c) entered disabled state
+Jul 22 19:49:59 TheHive-win systemd-resolved[165]: message repeated 9 times: [ Clock change detected. Flushing caches.]
+Jul 22 19:50:01 TheHive-win CRON[29577]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:50:29 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 22 19:51:20 TheHive-win kernel: [38071.944592] br-a4fd29cfb308: port 2(veth8eb847e) entered disabled state
+Jul 22 19:51:20 TheHive-win kernel: [38071.944725] veth91cb316: renamed from eth0
+Jul 22 19:51:20 TheHive-win kernel: [38072.042281] br-a4fd29cfb308: port 2(veth8eb847e) entered disabled state
+Jul 22 19:51:20 TheHive-win kernel: [38072.043149] device veth8eb847e left promiscuous mode
+Jul 22 19:51:20 TheHive-win kernel: [38072.043155] br-a4fd29cfb308: port 2(veth8eb847e) entered disabled state
+Jul 22 19:51:22 TheHive-win kernel: [38074.478511] br-a4fd29cfb308: port 3(vethaf5c7ed) entered disabled state
+Jul 22 19:51:22 TheHive-win kernel: [38074.478821] veth97d2174: renamed from eth0
+Jul 22 19:51:23 TheHive-win kernel: [38074.597158] br-a4fd29cfb308: port 3(vethaf5c7ed) entered disabled state
+Jul 22 19:51:23 TheHive-win kernel: [38074.597920] device vethaf5c7ed left promiscuous mode
+Jul 22 19:51:23 TheHive-win kernel: [38074.597931] br-a4fd29cfb308: port 3(vethaf5c7ed) entered disabled state
+Jul 22 19:51:25 TheHive-win kernel: [38077.272292] br-a4fd29cfb308: port 1(veth30b55c5) entered disabled state
+Jul 22 19:51:25 TheHive-win kernel: [38077.272556] veth0a00821: renamed from eth0
+Jul 22 19:51:25 TheHive-win kernel: [38077.403605] br-a4fd29cfb308: port 1(veth30b55c5) entered disabled state
+Jul 22 19:51:25 TheHive-win kernel: [38077.404342] device veth30b55c5 left promiscuous mode
+Jul 22 19:51:25 TheHive-win kernel: [38077.404348] br-a4fd29cfb308: port 1(veth30b55c5) entered disabled state
+Jul 22 19:53:35 TheHive-win kernel: [38207.373473] br-a4fd29cfb308: port 1(vethb5d24bb) entered blocking state
+Jul 22 19:53:35 TheHive-win kernel: [38207.373503] br-a4fd29cfb308: port 1(vethb5d24bb) entered disabled state
+Jul 22 19:53:35 TheHive-win kernel: [38207.373771] device vethb5d24bb entered promiscuous mode
+Jul 22 19:53:35 TheHive-win kernel: [38207.386155] br-a4fd29cfb308: port 2(vethb589b0f) entered blocking state
+Jul 22 19:53:35 TheHive-win kernel: [38207.386162] br-a4fd29cfb308: port 2(vethb589b0f) entered disabled state
+Jul 22 19:53:35 TheHive-win kernel: [38207.386240] device vethb589b0f entered promiscuous mode
+Jul 22 19:53:35 TheHive-win kernel: [38207.386657] br-a4fd29cfb308: port 2(vethb589b0f) entered blocking state
+Jul 22 19:53:35 TheHive-win kernel: [38207.386662] br-a4fd29cfb308: port 2(vethb589b0f) entered forwarding state
+Jul 22 19:53:35 TheHive-win kernel: [38207.386889] br-a4fd29cfb308: port 2(vethb589b0f) entered disabled state
+Jul 22 19:53:35 TheHive-win kernel: [38207.397603] br-a4fd29cfb308: port 3(veth90e328d) entered blocking state
+Jul 22 19:53:35 TheHive-win kernel: [38207.397609] br-a4fd29cfb308: port 3(veth90e328d) entered disabled state
+Jul 22 19:53:35 TheHive-win kernel: [38207.397684] device veth90e328d entered promiscuous mode
+Jul 22 19:53:35 TheHive-win kernel: [38207.398842] br-a4fd29cfb308: port 3(veth90e328d) entered blocking state
+Jul 22 19:53:35 TheHive-win kernel: [38207.398847] br-a4fd29cfb308: port 3(veth90e328d) entered forwarding state
+Jul 22 19:53:35 TheHive-win kernel: [38207.399017] br-a4fd29cfb308: port 3(veth90e328d) entered disabled state
+Jul 22 19:53:35 TheHive-win kernel: [38207.410035] br-a4fd29cfb308: port 4(veth505bc1f) entered blocking state
+Jul 22 19:53:35 TheHive-win kernel: [38207.410044] br-a4fd29cfb308: port 4(veth505bc1f) entered disabled state
+Jul 22 19:53:35 TheHive-win kernel: [38207.410184] device veth505bc1f entered promiscuous mode
+Jul 22 19:53:35 TheHive-win kernel: [38207.410417] br-a4fd29cfb308: port 4(veth505bc1f) entered blocking state
+Jul 22 19:53:35 TheHive-win kernel: [38207.410421] br-a4fd29cfb308: port 4(veth505bc1f) entered forwarding state
+Jul 22 19:53:35 TheHive-win kernel: [38207.411690] eth0: renamed from veth5c3da9f
+Jul 22 19:53:35 TheHive-win kernel: [38207.475844] br-a4fd29cfb308: port 4(veth505bc1f) entered disabled state
+Jul 22 19:53:35 TheHive-win kernel: [38207.475926] IPv6: ADDRCONF(NETDEV_CHANGE): vethb5d24bb: link becomes ready
+Jul 22 19:53:35 TheHive-win kernel: [38207.475960] br-a4fd29cfb308: port 1(vethb5d24bb) entered blocking state
+Jul 22 19:53:35 TheHive-win kernel: [38207.475962] br-a4fd29cfb308: port 1(vethb5d24bb) entered forwarding state
+Jul 22 19:53:35 TheHive-win kernel: [38207.481806] eth0: renamed from veth33a10d6
+Jul 22 19:53:36 TheHive-win kernel: [38207.524910] eth0: renamed from veth865e8c0
+Jul 22 19:53:36 TheHive-win kernel: [38207.584715] eth0: renamed from vethd997a8f
+Jul 22 19:53:36 TheHive-win kernel: [38207.655388] IPv6: ADDRCONF(NETDEV_CHANGE): veth90e328d: link becomes ready
+Jul 22 19:53:36 TheHive-win kernel: [38207.655433] br-a4fd29cfb308: port 3(veth90e328d) entered blocking state
+Jul 22 19:53:36 TheHive-win kernel: [38207.655437] br-a4fd29cfb308: port 3(veth90e328d) entered forwarding state
+Jul 22 19:53:36 TheHive-win kernel: [38207.655473] IPv6: ADDRCONF(NETDEV_CHANGE): vethb589b0f: link becomes ready
+Jul 22 19:53:36 TheHive-win kernel: [38207.655491] br-a4fd29cfb308: port 2(vethb589b0f) entered blocking state
+Jul 22 19:53:36 TheHive-win kernel: [38207.655493] br-a4fd29cfb308: port 2(vethb589b0f) entered forwarding state
+Jul 22 19:53:36 TheHive-win kernel: [38207.655523] IPv6: ADDRCONF(NETDEV_CHANGE): veth505bc1f: link becomes ready
+Jul 22 19:53:36 TheHive-win kernel: [38207.655542] br-a4fd29cfb308: port 4(veth505bc1f) entered blocking state
+Jul 22 19:53:36 TheHive-win kernel: [38207.655544] br-a4fd29cfb308: port 4(veth505bc1f) entered forwarding state
+Jul 22 19:54:02 TheHive-win kernel: [38234.268040] br-a4fd29cfb308: port 2(vethb589b0f) entered disabled state
+Jul 22 19:54:02 TheHive-win kernel: [38234.268285] vethd997a8f: renamed from eth0
+Jul 22 19:54:02 TheHive-win kernel: [38234.404126] br-a4fd29cfb308: port 2(vethb589b0f) entered disabled state
+Jul 22 19:54:02 TheHive-win kernel: [38234.405483] device vethb589b0f left promiscuous mode
+Jul 22 19:54:02 TheHive-win kernel: [38234.405490] br-a4fd29cfb308: port 2(vethb589b0f) entered disabled state
+Jul 22 19:54:59 TheHive-win systemd-resolved[165]: message repeated 9 times: [ Clock change detected. Flushing caches.]
+Jul 22 19:55:01 TheHive-win CRON[30247]: (serpent) CMD (/home/serpent/tmp/test.sh)
+Jul 22 19:55:29 TheHive-win systemd-resolved[165]: Clock change detected. Flushing caches.
+Jul 22 19:56:54 TheHive-win kernel: [38405.753563] br-a4fd29cfb308: port 3(veth90e328d) entered disabled state
+Jul 22 19:56:54 TheHive-win kernel: [38405.753602] veth33a10d6: renamed from eth0
+Jul 22 19:56:54 TheHive-win kernel: [38405.864061] br-a4fd29cfb308: port 3(veth90e328d) entered disabled state
+Jul 22 19:56:54 TheHive-win kernel: [38405.865019] device veth90e328d left promiscuous mode
+Jul 22 19:56:54 TheHive-win kernel: [38405.865026] br-a4fd29cfb308: port 3(veth90e328d) entered disabled state
+Jul 22 19:56:54 TheHive-win kernel: [38406.130391] br-a4fd29cfb308: port 2(veth2faf89e) entered blocking state
+Jul 22 19:56:54 TheHive-win kernel: [38406.130396] br-a4fd29cfb308: port 2(veth2faf89e) entered disabled state
+Jul 22 19:56:54 TheHive-win kernel: [38406.130446] device veth2faf89e entered promiscuous mode
+Jul 22 19:56:54 TheHive-win kernel: [38406.130673] br-a4fd29cfb308: port 2(veth2faf89e) entered blocking state
+Jul 22 19:56:54 TheHive-win kernel: [38406.130677] br-a4fd29cfb308: port 2(veth2faf89e) entered forwarding state
+Jul 22 19:56:54 TheHive-win kernel: [38406.156900] eth0: renamed from veth99be8f3
+Jul 22 19:56:54 TheHive-win kernel: [38406.239619] IPv6: ADDRCONF(NETDEV_CHANGE): veth2faf89e: link becomes ready
+Jul 22 18:30:01 TheHive-win CRON[23708]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 18:30:01 TheHive-win CRON[23708]: pam_unix(cron:session): session closed for user serpent
+Jul 22 18:35:01 TheHive-win CRON[23890]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 18:35:01 TheHive-win CRON[23890]: pam_unix(cron:session): session closed for user serpent
+Jul 22 18:40:01 TheHive-win CRON[24073]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 18:40:01 TheHive-win CRON[24073]: pam_unix(cron:session): session closed for user serpent
+Jul 22 18:45:01 TheHive-win CRON[24258]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 18:45:01 TheHive-win CRON[24258]: pam_unix(cron:session): session closed for user serpent
+Jul 22 18:50:01 TheHive-win CRON[24444]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 18:50:01 TheHive-win CRON[24444]: pam_unix(cron:session): session closed for user serpent
+Jul 22 18:55:01 TheHive-win CRON[24627]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 18:55:01 TheHive-win CRON[24627]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:00:01 TheHive-win CRON[24811]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:00:01 TheHive-win CRON[24811]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:05:01 TheHive-win CRON[24997]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:05:01 TheHive-win CRON[24997]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:10:01 TheHive-win CRON[25189]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:10:01 TheHive-win CRON[25189]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:15:01 TheHive-win CRON[25384]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:15:01 TheHive-win CRON[25384]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:17:01 TheHive-win CRON[25462]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 22 19:17:01 TheHive-win CRON[25462]: pam_unix(cron:session): session closed for user root
+Jul 22 19:20:01 TheHive-win CRON[25578]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:20:01 TheHive-win CRON[25578]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:25:01 TheHive-win CRON[25761]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:25:01 TheHive-win CRON[25761]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:25:16 TheHive-win sudo:  serpent : command not allowed ; TTY=pts/3 ; PWD=/mnt/c/Users/andri/wls/dev/ca-DevOpsUA5 ; USER=root ; COMMAND=/var/lib/docker/containers
+Jul 22 19:25:24 TheHive-win sudo:  serpent : TTY=pts/3 ; PWD=/mnt/c/Users/andri/wls/dev/ca-DevOpsUA5 ; USER=root ; COMMAND=/usr/bin/ls /var/lib/docker/containers
+Jul 22 19:25:24 TheHive-win sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Jul 22 19:25:24 TheHive-win sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 19:30:01 TheHive-win CRON[26471]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:30:01 TheHive-win CRON[26471]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:35:01 TheHive-win CRON[26649]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:35:01 TheHive-win CRON[26649]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:38:44 TheHive-win login[26865]: pam_unix(login:session): session opened for user root(uid=0) by (uid=0)
+Jul 22 19:38:44 TheHive-win systemd-logind[234]: New session 146 of user root.
+Jul 22 19:38:44 TheHive-win systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+Jul 22 19:38:44 TheHive-win login[26938]: ROOT LOGIN  on '/dev/pts/7'
+Jul 22 19:40:01 TheHive-win CRON[27582]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:40:01 TheHive-win CRON[27582]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:45:01 TheHive-win CRON[28954]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:45:01 TheHive-win CRON[28954]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:50:01 TheHive-win CRON[29575]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:50:01 TheHive-win CRON[29575]: pam_unix(cron:session): session closed for user serpent
+Jul 22 19:55:01 TheHive-win CRON[30245]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 19:55:01 TheHive-win CRON[30245]: pam_unix(cron:session): session closed for user serpent
+Jul 22 20:00:01 TheHive-win CRON[31209]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 20:00:01 TheHive-win CRON[31209]: pam_unix(cron:session): session closed for user serpent
+Jul 22 20:05:01 TheHive-win CRON[31333]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 20:05:01 TheHive-win CRON[31333]: pam_unix(cron:session): session closed for user serpent
+Jul 22 20:10:01 TheHive-win CRON[32257]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 20:10:01 TheHive-win CRON[32257]: pam_unix(cron:session): session closed for user serpent
+Jul 22 20:15:01 TheHive-win CRON[33616]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 20:15:01 TheHive-win CRON[33616]: pam_unix(cron:session): session closed for user serpent
+Jul 22 20:17:01 TheHive-win CRON[34039]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jul 22 20:17:01 TheHive-win CRON[34039]: pam_unix(cron:session): session closed for user root
+Jul 22 20:20:01 TheHive-win CRON[34304]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 20:20:01 TheHive-win CRON[34304]: pam_unix(cron:session): session closed for user serpent
+Jul 22 20:25:01 TheHive-win CRON[36526]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 20:25:01 TheHive-win CRON[36526]: pam_unix(cron:session): session closed for user serpent
+Jul 22 20:30:01 TheHive-win CRON[37455]: pam_unix(cron:session): session opened for user serpent(uid=1000) by (uid=0)
+Jul 22 20:30:01 TheHive-win CRON[37455]: pam_unix(cron:session): session closed for user serpent
