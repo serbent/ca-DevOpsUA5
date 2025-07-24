@@ -4,7 +4,7 @@ A simple demo of what to expect from mid-term exam
 Gatus: https://github.com/TwiN/gatus
 Uptime-kuma: https://github.com/louislam/uptime-kuma
 # 3. Hands on 
-1. Create an application (python) that would print current date when accessed
+1. Create an web application (python) that would print current date when accessed
     * Application needs to log all interaction with it: access, error, etc.
 2. Create logging setup for that application 
 3. Create a monitoring setup for that application 
