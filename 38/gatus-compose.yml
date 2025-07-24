@@ -1,0 +1,9 @@
+services:
+  gatus:
+    image: twinproduction/gatus:v5.20.0
+    container_name: gatus
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./gatus.yml:/config/gatus.yml
+    restart: unless-stopped

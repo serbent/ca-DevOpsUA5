@@ -1,0 +1,12 @@
+volumes:
+  uptime-kuma:
+    driver: local
+services:
+  kuma:
+    image: louislam/uptime-kuma:1.23.16-alpine
+    container_name: uptime-kuma
+    restart: always
+    ports:
+      - "3001:3001"
+    volumes:
+      - uptime-kuma:/app/data
