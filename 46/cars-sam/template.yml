@@ -5,7 +5,7 @@ Description: My Cars AWS SAM
 Globals:
   Function:
     Handler: index.lambda_handler
-    Runtime: python3.12
+    Runtime: python3.10
     Environment:
       Variables:
         TABLE_NAME: !Ref Database
@@ -25,7 +25,7 @@ Resources:
   Database:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: "Cars-SAM"
+      TableName: "Cars-SAM-ua5"
       AttributeDefinitions:
         - AttributeName: "Cars_id"
           AttributeType: "S"
@@ -48,6 +48,26 @@ Resources:
             RestApiId: !Ref CarsRestApi
             Path: /car
             Method: POST
+
+  GetCarsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/getCars
+      Handler: index.lambda_handler
+      Runtime: python3.10
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref Database
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref Database
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            RestApiId: !Ref CarsRestApi
+            Path: /car
+            Method: GET
 
 Outputs:
   RestApiUrl:

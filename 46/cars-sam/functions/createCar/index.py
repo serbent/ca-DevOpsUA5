@@ -3,7 +3,7 @@ import json
 import uuid
 
 dynamodb = boto3.resource("dynamodb")
-table = dynamodb.Table("Cars-SAM")
+table = dynamodb.Table("Cars-SAM-ua5")
 
 def lambda_handler(event, context):
     payload = json.loads(event["body"])
