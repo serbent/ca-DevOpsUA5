@@ -21,7 +21,7 @@ resource "aws_iam_openid_connect_provider" "github" {
 
 # IAM Role that GitHub Actions can assume
 resource "aws_iam_role" "github_actions_role" {
-  name = "github-actions-role"
+  name = "github-actions-role-ua5"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",

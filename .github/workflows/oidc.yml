@@ -2,7 +2,7 @@ name: AWS Deployment
 
 on:
   push:
-    branches: [dev]
+    branches: [main]
 
 jobs:
   deploy:
@@ -19,7 +19,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:
-          role-to-assume: arn:aws:iam::034362059178:role/github-actions-role
+          role-to-assume: arn:aws:iam::034362059178:role/github-actions-role-ua5
           aws-region: eu-central-1
 
       - name: Verify AWS Access
