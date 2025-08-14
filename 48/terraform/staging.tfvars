@@ -1,0 +1,1 @@
+bucket_name = "ca-devops-ua5-staging-terraform-state"
