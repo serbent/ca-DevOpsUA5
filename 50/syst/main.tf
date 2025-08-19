@@ -11,3 +11,12 @@ resource "aws_s3_bucket" "oidc_bucket" {
     Env  = var.env
   }
 }
+
+
+resource "aws_s3_bucket_versioning" "oidc_bucket_versioning" {
+  bucket = aws_s3_bucket.oidc_bucket.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
