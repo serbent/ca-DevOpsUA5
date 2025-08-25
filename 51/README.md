@@ -1,0 +1,1 @@
+# 51. Terraform. Dependencies. for_each. lifecycle. 
