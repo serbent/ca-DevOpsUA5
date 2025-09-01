@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ${{ github.event.inputs.workdir }}
+        # working-directory: ${{ github.event.inputs.workdir }}
+        working-directory: 54/ansible
 
     steps:
         - uses: actions/checkout@v4

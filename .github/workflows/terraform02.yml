@@ -18,7 +18,8 @@ jobs:
 
     defaults:
       run:
-        working-directory: ${{ github.event.inputs.workdir }}
+        # working-directory: ${{ github.event.inputs.workdir }}
+        working-directory: 54/terraform
 
     steps:
       - uses: actions/checkout@v4 
