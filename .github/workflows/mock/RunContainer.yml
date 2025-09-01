@@ -1,7 +1,7 @@
 name: 01.3 Run Gatus in Docker
 
 on:
-  workflow_dispatch: 
+  workflow_call: 
     inputs:
       workdir:
         type: string
