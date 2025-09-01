@@ -4,17 +4,23 @@ on:
     workflow_dispatch:
 
 jobs:
-    createInfra:
+    checkout:
         runs-on: ubuntu-latest
 
         steps:
         - uses: actions/checkout@v2
-        # Step 1: Run terraform02.yml
-        - uses: ./.github/workflows/terraform02.yml
+        
+    create_infra:
+      # Step 1: Run terraform02.yml
+      uses: ./.github/workflows/terraform02.yml
 
-        # Step 2: Prepare Docker VM
-        - uses: ./.github/workflows/PrepareDockerVM.yml
-
-        # Step 3: Run Container
-        - uses: ./.github/workflows/RunContainer.yml
+    prepare_docker:
+      needs: create_infra
+      # Step 2: Prepare Docker VM
+      uses: ./.github/workflows/PrepareDockerVM.yml
+      
+    run_container:
+      needs: [create_infra, prepare_docker]   
+      # Step 3: Run Container
+      uses: ./.github/workflows/RunContainer.yml
             
