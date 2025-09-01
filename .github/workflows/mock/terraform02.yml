@@ -11,9 +11,6 @@ on:
 
 jobs:
   build:
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -31,6 +28,11 @@ jobs:
         uses: hashicorp/setup-terraform@v1
         with:
           terraform_version: latest
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          role-to-assume: arn:aws:iam::034362059178:role/github-actions-role-ua5
+          aws-region: eu-central-1
 
       - name: Terraform init
         run: terraform init
