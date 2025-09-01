@@ -10,11 +10,11 @@ jobs:
         steps:
         - uses: actions/checkout@v2
         # Step 1: Run terraform02.yml
-        - uses: ./.github/workflows/mock/terraform02.yml
+        - uses: ./.github/workflows/terraform02.yml
 
         # Step 2: Prepare Docker VM
-        - uses: ./.github/workflows/mock/PrepareDockerVM.yml
+        - uses: ./.github/workflows/PrepareDockerVM.yml
 
         # Step 3: Run Container
-        - uses: ./.github/workflows/mock/RunContainer.yml
+        - uses: ./.github/workflows/RunContainer.yml
             
