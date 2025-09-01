@@ -1,0 +1,39 @@
+name: 01.3 Run Gatus in Docker
+
+on:
+  workflow_dispatch: 
+    inputs:
+      workdir:
+        type: string
+        description: Path to Ansible code
+        default: 54/ansible
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.event.inputs.workdir }}
+
+    steps:
+        - uses: actions/checkout@v4
+
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: '3.x'
+
+        - name: Install Ansible and Dependencies
+          run: |
+            python3 -m pip install ansible ansible-core boto3 botocore
+        
+        - name: Install amazon-aws pluigin
+          run : ansible-galaxy collection install amazon.aws
+
+        - name: Set up SSH key
+          run: |
+            mkdir -p ~/.ssh
+            echo "${{ secrets.AWS_EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+            chmod 600 ~/.ssh/id_rsa          
+
+        - name: Run the container
+          run: ansible-playbook -u ubuntu runimage.yml

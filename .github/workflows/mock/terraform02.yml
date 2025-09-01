@@ -1,0 +1,56 @@
+name: 01.1 Terraform Mock Stuff
+
+on:
+  workflow_dispatch: 
+    inputs:
+      environment:
+        type: string
+        description: Path to Terraform code
+        default: 54/terraform
+  
+
+jobs:
+  build:
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    defaults:
+      run:
+        working-directory: ${{ github.event.inputs.environment }}
+
+    steps:
+      - uses: actions/checkout@v4 
+
+      - name: Terraform plan
+        id: terraform-plan
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: latest
+
+      - name: Terraform init
+        run: terraform init
+
+      - name: Terraform validate
+        run: terraform validate
+
+      - name: Terraform plan  
+        run: terraform plan -out=tfplan
+
+      - name: Test with Checkov
+        id: checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: ${{ github.event.inputs.environment }}
+          framework: terraform
+          soft_fail: true
+
+      - name: Terraform apply
+        run: terraform apply -auto-approve tfplan
+    
+      - name: Terraform output
+        run: terraform output
