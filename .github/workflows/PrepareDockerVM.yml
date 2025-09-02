@@ -39,11 +39,16 @@ jobs:
         - name: Set up SSH key
           run: |
             mkdir -p ~/.ssh
-            echo "${{ secrets.AWS_EC2_SSH_KEY }}"
-            echo "${{ secrets.AWS_EC2_SSH_KEY }}" > ~/.ssh/id_rsa
-            echo "${{ secrets.AWS_EC2_SSH_KEY }}" > ~/.ssh/ca_key.pem
-            chmod 600 ~/.ssh/ca_key.pem
-            chmod 600 ~/.ssh/id_rsa          
+            cat > ~/.ssh/id_rsa <<'EOF'
+            ${{ secrets.AWS_EC2_SSH_KEY }}
+            EOF
+            chmod 600 ~/.ssh/id_rsa
+            
+        - name: Debug secrets
+          run: |
+            echo "Secret length: ${#AWS_EC2_SSH_KEY}"
+          env:
+            AWS_EC2_SSH_KEY: ${{ secrets.AWS_EC2_SSH_KEY }}      
 
         - name: Prepare Docker VM with ansible
           run: ansible-playbook -u ubuntu --key ~/.ssh/ca_key.pem playbook.yml
