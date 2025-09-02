@@ -25,6 +25,12 @@ jobs:
           uses: actions/setup-python@v5
           with:
             python-version: '3.x'
+            
+        - name: Configure AWS Credentials
+          uses: aws-actions/configure-aws-credentials@v3
+          with:
+            role-to-assume: arn:aws:iam::034362059178:role/github-actions-role-ua5
+            aws-region: eu-central-1
 
         - name: Install Ansible and Dependencies
           run: |
