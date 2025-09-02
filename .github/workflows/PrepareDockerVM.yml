@@ -7,6 +7,9 @@ on:
         type: string
         description: Path to Ansible code
         default: 54/ansible
+    secrets:
+      AWS_EC2_SSH_KEY:
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
