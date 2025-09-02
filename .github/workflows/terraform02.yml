@@ -48,7 +48,7 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: ${{ github.event.inputs.environment }}
+          directory: 54/terraform
           framework: terraform
           soft_fail: true
 
