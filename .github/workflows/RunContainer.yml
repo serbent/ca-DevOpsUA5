@@ -37,4 +37,4 @@ jobs:
             chmod 600 ~/.ssh/id_rsa          
 
         - name: Run the container
-          run: ansible-playbook -u ubuntu runimage.yml
+          run: ansible-playbook -u ubuntu --key ~/.ssh/id_rsa runimage.yml
