@@ -43,7 +43,7 @@ jobs:
             ${{ secrets.AWS_EC2_SSH_KEY }}
             EOF
             chmod 600 ~/.ssh/id_rsa
-            
+
         - name: Debug secrets
           run: |
             echo "Secret length: ${#AWS_EC2_SSH_KEY}"
@@ -51,4 +51,4 @@ jobs:
             AWS_EC2_SSH_KEY: ${{ secrets.AWS_EC2_SSH_KEY }}      
 
         - name: Prepare Docker VM with ansible
-          run: ansible-playbook -u ubuntu --key ~/.ssh/ca_key.pem playbook.yml
+          run: ansible-playbook -u ubuntu playbook.yml
