@@ -40,7 +40,9 @@ jobs:
           run: |
             mkdir -p ~/.ssh
             echo "${{ secrets.AWS_EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+            echo "${{ secrets.AWS_EC2_SSH_KEY }}" > ~/.ssh/ca_key.pem
+            chmod 600 ~/.ssh/ca_key.pem
             chmod 600 ~/.ssh/id_rsa          
 
         - name: Prepare Docker VM with ansible
-          run: ansible-playbook -u ubuntu --key ~/.ssh/id_rsa playbook.yml
+          run: ansible-playbook -u ubuntu --key ~/.ssh/ca_key.pem playbook.yml

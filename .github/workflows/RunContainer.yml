@@ -34,7 +34,9 @@ jobs:
           run: |
             mkdir -p ~/.ssh
             echo "${{ secrets.AWS_EC2_SSH_KEY }}" > ~/.ssh/id_rsa
-            chmod 600 ~/.ssh/id_rsa          
+            echo "${{ secrets.AWS_EC2_SSH_KEY }}" > ~/.ssh/ca_key.pem
+            chmod 600 ~/.ssh/id_rsa 
+            chmod 600 ~/.ssh/ca_key.pem         
 
         - name: Run the container
-          run: ansible-playbook -u ubuntu --key ~/.ssh/id_rsa runimage.yml
+          run: ansible-playbook -u ubuntu --key ~/.ssh/ca_key.pem runimage.yml
