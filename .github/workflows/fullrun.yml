@@ -11,6 +11,8 @@ jobs:
         - uses: actions/checkout@v2
         
     create_infra:
+      secrets:
+        AWS_EC2_SSH_KEY: ${{ secrets.AWS_EC2_SSH_KEY }}
       permissions:
         id-token: write
         contents: read
@@ -18,6 +20,8 @@ jobs:
       uses: ./.github/workflows/terraform02.yml
 
     prepare_docker:
+      secrets:
+        AWS_EC2_SSH_KEY: ${{ secrets.AWS_EC2_SSH_KEY }}
       permissions:
         id-token: write
         contents: read
@@ -26,6 +30,8 @@ jobs:
       uses: ./.github/workflows/PrepareDockerVM.yml
 
     run_container:
+      secrets:
+        AWS_EC2_SSH_KEY: ${{ secrets.AWS_EC2_SSH_KEY }}
       permissions:
         id-token: write
         contents: read
