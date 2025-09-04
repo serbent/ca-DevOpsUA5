@@ -18,6 +18,10 @@ Get specific resources:
 kubectl get <RESOUCE_TYPE>
 kubectl get po,deploy,svc,hpa
 ```
+Get logs:
+```bash
+kubectl logs <POD_NAME>
+```
 Get resource information:
 ```bash
 kubectl describe <RESOUCE_TYPE> <RESOURCE_NAME>
