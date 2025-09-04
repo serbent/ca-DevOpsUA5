@@ -28,6 +28,11 @@ Delete resource:
 kubectl delete <RESOUCE_TYPE> <RESOURCE_NAME>
 kubectl delete svc nginx-service
 ```
+Portforward for service access:
+```bash
+kubectl port-forward svc/<SERVICE_NAME> <HOST_PORT>/<TARGET_PORT>
+kubectl port-forward svc/nginx-service 8080:80
+```
 Imperative approach:
 ```bash
 kubectl run --image=nginx nginx
