@@ -3,7 +3,8 @@ resource "aws_eks_cluster" "eks" {
   role_arn = aws_iam_role.eks_cluster_role.arn
 
   vpc_config {
-    subnet_ids         = [for s in aws_subnet.public : s.id]
+  # Use private subnets for control plane networking and Fargate scheduling
+  subnet_ids         = [for s in aws_subnet.private : s.id]
     endpoint_public_access = true
     endpoint_private_access = false
     public_access_cidrs = ["0.0.0.0/0"]
@@ -22,7 +23,8 @@ resource "aws_eks_fargate_profile" "fp_default" {
   fargate_profile_name = "fp-default"
   pod_execution_role_arn = aws_iam_role.fargate_pod_execution_role.arn
 
-  subnet_ids = [for s in aws_subnet.public : s.id]
+  # Fargate requires private subnets (non-public) — use the private subnets
+  subnet_ids = [for s in aws_subnet.private : s.id]
 
   selector {
     namespace = "default"

@@ -23,6 +23,17 @@ resource "aws_subnet" "public" {
   }
 }
 
+resource "aws_subnet" "private" {
+  count             = length(var.private_subnets_cidrs)
+  vpc_id            = aws_vpc.eks_vpc.id
+  cidr_block        = var.private_subnets_cidrs[count.index]
+  map_public_ip_on_launch = false
+  availability_zone = element(var.availability_zones, count.index)
+  tags = {
+    Name = "eks-fargate-private-${count.index}"
+  }
+}
+
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.eks_vpc.id
   route {
@@ -59,4 +70,31 @@ resource "aws_security_group" "cluster_sg" {
   }
 
   tags = { Name = "eks-fargate-cluster-sg" }
+}
+
+# NAT for private subnet egress
+resource "aws_eip" "nat_eip" {
+  vpc = true
+}
+
+resource "aws_nat_gateway" "nat" {
+  allocation_id = aws_eip.nat_eip.id
+  subnet_id     = aws_subnet.public[0].id
+  depends_on    = [aws_internet_gateway.igw]
+  tags = { Name = "eks-fargate-nat" }
+}
+
+resource "aws_route_table" "private" {
+  vpc_id = aws_vpc.eks_vpc.id
+  route {
+    cidr_block     = "0.0.0.0/0"
+    nat_gateway_id = aws_nat_gateway.nat.id
+  }
+  tags = { Name = "eks-fargate-private-rt" }
+}
+
+resource "aws_route_table_association" "private_assoc" {
+  count          = length(aws_subnet.private)
+  subnet_id      = aws_subnet.private[count.index].id
+  route_table_id = aws_route_table.private.id
 }
