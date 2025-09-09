@@ -22,3 +22,17 @@ Install the namespace plugin
 ```bash
 kubectl krew install ns
 ```
+Change namespace using plugin:
+```bash
+kubectl-ns
+```
+
+Full command to change namespace:
+```bash
+kubectl config set-context --current --namespace my-namespace
+```
+
+Edit resource using `kubectl`:
+```bash
+kubectl edit <RESOURCE_TYPE> <RESOURCE_NAME> 
+```

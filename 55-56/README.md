@@ -2,7 +2,7 @@
 
 ## Usefull commands 
 
-Enable auto-complere:
+Enable auto-complete:
 ```bash
 echo 'source <(kubectl completion bash)' >>~/.bashrc
 source ~/.bashrc

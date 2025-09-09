@@ -1,33 +1,39 @@
 apiVersion: batch/v1
-kind: Job
+kind: CronJob
 metadata:
-  name: curl-google-25
+  name: curl-google-every-5m
   labels:
     app: curl-google
 spec:
-  backoffLimit: 0
-  template:
-    metadata:
-      labels:
-        app: curl-google
+  schedule: "*/5 * * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 1
+  jobTemplate:
     spec:
-      restartPolicy: Never
-      containers:
-      - name: curl
-        image: curlimages/curl:8.4.0
-        command: ["/bin/sh", "-c"]
-        args:
-        - |
-          set -eu
-          echo "Starting 25 curl attempts to https://www.google.com"
-          codes=""
-          for i in $(seq 1 25); do
-            # follow redirects (-L); write no body; output only HTTP status
-            code=$(curl -sS -o /dev/null -w "%{http_code}" -L https://www.google.com || echo "000")
-            echo "attempt:$i code:$code"
-            codes="$codes$code "
-          done
-          echo "ALL_CODES:$codes"
-          echo "SUMMARY: (count status_code)"
-          # print a simple tally per code
-          printf "%s\n" $codes | tr ' ' '\n' | sed '/^$/d' | sort | uniq -c
+      backoffLimit: 0
+      template:
+        metadata:
+          labels:
+            app: curl-google
+        spec:
+          restartPolicy: Never
+          containers:
+          - name: curl
+            image: curlimages/curl:8.4.0
+            command: ["/bin/sh", "-c"]
+            args:
+            - |
+              set -eu
+              echo "Starting 25 curl attempts to https://www.google.com"
+              codes=""
+              for i in $(seq 1 25); do
+                # follow redirects (-L); write no body; output only HTTP status
+                code=$(curl -sS -o /dev/null -w "%{http_code}" -L https://www.google.com || echo "000")
+                echo "attempt:$i code:$code"
+                codes="$codes$code "
+              done
+              echo "ALL_CODES:$codes"
+              echo "SUMMARY: (count status_code)"
+              # print a simple tally per code
+              printf "%s\n" $codes | tr ' ' '\n' | sed '/^$/d' | sort | uniq -c
