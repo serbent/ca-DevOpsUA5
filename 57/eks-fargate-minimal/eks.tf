@@ -35,6 +35,23 @@ resource "aws_eks_fargate_profile" "fp_default" {
   depends_on = [aws_eks_cluster.eks]
 }
 
+resource "aws_eks_fargate_profile" "ns_development" {
+  cluster_name = aws_eks_cluster.eks.name
+  fargate_profile_name = "fp-development"
+  pod_execution_role_arn = aws_iam_role.fargate_pod_execution_role.arn
+
+  # Fargate requires private subnets (non-public) — use the private subnets
+  subnet_ids = [for s in aws_subnet.private : s.id]
+
+  selector {
+    namespace = "development"
+  }
+
+  tags = { Name = "fp-development" }
+
+  depends_on = [aws_eks_cluster.eks]
+}
+
 # resource "aws_eks_identity_provider_config" "oidc_placeholder" {
 #   cluster_name = aws_eks_cluster.eks.name
 #   # placeholder: not required for basic fargate but kept for future
