@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: traefik
+  namespace: default
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-type: alb
+    service.beta.kubernetes.io/aws-load-balancer-target-type: ip
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+    meta.helm.sh/release-name: traefik
+    meta.helm.sh/release-namespace: default
+spec:
+  type: LoadBalancer
+  selector:
+    app.kubernetes.io/instance: traefik-default
+    app.kubernetes.io/name: traefik
+  ports:
+  - name: web
+    port: 80
+    targetPort: web
+  - name: websecure
+    port: 443
+    targetPort: websecure
+

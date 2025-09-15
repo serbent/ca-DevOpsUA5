@@ -1,0 +1,39 @@
+replicas: 2
+
+ports:
+  web:
+    port: 80
+    expose:
+      enabled: true
+    targetPort: 80
+  websecure:
+    port: 443
+    expose:
+      enabled: true
+    targetPort: 443
+
+deployment:
+  kind: Deployment
+
+service:
+  type: ClusterIP
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
+
+ingressClass:
+  enabled: true
+  isDefaultClass: true
+  name: alb
+
+dashboard:
+  enabled: true
+
+rbac:
+  enabled: true
+
+# ServiceAccount: either leave empty or just set a name
+# serviceAccount:
+#   name: traefik
+

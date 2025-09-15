@@ -50,27 +50,32 @@ spec:
     kind: Deployment
     name: nginx-deployment
   minReplicas: 1
-  maxReplicas: 5
+  maxReplicas: 9
   targetCPUUtilizationPercentage: 2
-
---- 
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: cadevops-ingress
-  annotations:
-    kubernetes.io/ingress.class: "traefik"
+  name: ca-ingress
 spec:
-  ingressClassName: traefik
   rules:
-    - host: example.com
+    - host: ca.k8s.lan
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: cadevops-service
+                name: nginx-service
                 port:
                   number: 80
-
+    - host: ca.lan
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx-service
+                port:
+                  number: 80

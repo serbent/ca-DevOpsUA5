@@ -35,19 +35,19 @@ resource "aws_eks_fargate_profile" "fp_default" {
   depends_on = [aws_eks_cluster.eks]
 }
 
-resource "aws_eks_fargate_profile" "ns_development" {
+resource "aws_eks_fargate_profile" "fp_traefik" {
   cluster_name = aws_eks_cluster.eks.name
-  fargate_profile_name = "fp-development"
+  fargate_profile_name = "fp-traefik"
   pod_execution_role_arn = aws_iam_role.fargate_pod_execution_role.arn
 
   # Fargate requires private subnets (non-public) — use the private subnets
   subnet_ids = [for s in aws_subnet.private : s.id]
 
   selector {
-    namespace = "development"
+    namespace = "traefikv2"
   }
 
-  tags = { Name = "fp-development" }
+  tags = { Name = "fp-traefik" }
 
   depends_on = [aws_eks_cluster.eks]
 }
