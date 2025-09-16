@@ -9,7 +9,6 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: nfs
   nfs:
     path: /mnt/nsfd/nfs/k8s/ca
     server: 192.168.88.52
