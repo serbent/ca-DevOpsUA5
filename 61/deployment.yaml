@@ -22,8 +22,6 @@ spec:
           mountPath: /etc/nginx/conf.d
         - name: secret-volume
           mountPath: /etc/nginx/secrets
-        - name: data-volume
-          mountPath: /usr/share/nginx/html
         envFrom:                # <--- inject all keys as env vars
         - configMapRef:
             name: nginx-config
@@ -36,6 +34,3 @@ spec:
       - name: secret-volume
         secret:
           secretName: nginx-secret
-      - name: data-volume
-        persistentVolumeClaim:
-          claimName: nfs-pvc-ca
