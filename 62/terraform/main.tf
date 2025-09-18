@@ -12,18 +12,24 @@ module "eks" {
 
     vpc_id     = module.vpc.vpc_id
     subnet_ids = module.vpc.private_subnets
-    self_managed_node_groups = {
-        calesson = {
-            ami_type      = "AL2_x86_64"
-            instance_type = "m6i.large"
-
-            min_size = 2
-            max_size = 5
-            # This value is ignored after the initial creation
-            # https://github.com/bryantbiggs/eks-desired-size-hack
-            desired_size = 3
-            }
-  }
+    fargate_profiles= {
+      default = {
+        name = "default"
+        selectors = [
+          {
+            namespace = "default"
+          }
+        ]
+      },
+      kube-system = {
+        name = "kube-system"
+        selectors = [
+          {
+            namespace = "kube-system"
+          }
+        ]
+      }
+    }
     endpoint_public_access = true
     enable_cluster_creator_admin_permissions = true
 }
