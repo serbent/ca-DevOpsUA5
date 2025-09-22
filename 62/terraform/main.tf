@@ -29,6 +29,14 @@ module "eks" {
             namespace = "kube-system"
           }
         ]
+      },
+      aws-observability = {
+        name = "aws-observability"
+        selectors = [
+          {
+            namespace = "aws-observability"
+          }
+        ]
       }
     }
     endpoint_public_access = true
