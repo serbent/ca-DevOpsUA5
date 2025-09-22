@@ -22,14 +22,6 @@ module "eks" {
           }
         ]
       },
-      kube-system = {
-        name = "kube-system"
-        selectors = [
-          {
-            namespace = "kube-system"
-          }
-        ]
-      },
       aws-observability = {
         name = "aws-observability"
         selectors = [
@@ -39,8 +31,28 @@ module "eks" {
         ]
       }
     }
+    eks_managed_node_groups = {
+    system = {
+      instance_types = ["t3.medium"]
+      desired_size   = 2
+      min_size       = 1
+      max_size       = 3
+
+      # Label nodes so you know they’re system nodes
+      labels = {
+        role = "system"
+      }
+      # Launch template override for metadata options
+      launch_template_id      = aws_launch_template.system.id
+      launch_template_version = "$Latest"
+
+
+    }
+  }
     endpoint_public_access = true
     enable_cluster_creator_admin_permissions = true
+
+    
 }
 
 
@@ -95,4 +107,22 @@ module "vpc" {
   }
 
   tags = local.tags
+}
+
+
+resource "aws_launch_template" "system" {
+  name_prefix   = "system-node-"
+  image_id      = data.aws_ami.eks_worker.id
+  instance_type = "t3.medium"
+
+  metadata_options {
+    http_tokens                 = "required"
+    http_put_response_hop_limit = 5
+    http_endpoint               = "enabled"
+  }
+
+  # IAM role for nodes
+  iam_instance_profile {
+    name = aws_iam_instance_profile.system.name
+  }
 }
