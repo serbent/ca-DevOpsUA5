@@ -120,9 +120,14 @@ resource "aws_launch_template" "system" {
     http_put_response_hop_limit = 5
     http_endpoint               = "enabled"
   }
+}
 
-  # IAM role for nodes
-  iam_instance_profile {
-    name = aws_iam_instance_profile.system.name
+data "aws_ami" "eks_worker" {
+  most_recent = true
+  owners      = ["602401143452"] # Amazon EKS AMI account
+
+  filter {
+    name   = "name"
+    values = ["amazon-eks-node-1.30-v*"]
   }
 }

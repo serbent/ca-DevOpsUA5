@@ -41,21 +41,21 @@ kubectl apply \
 ```
 Install AWS Load Balancer Controller using a Kubernetes manifest. Download the controller specification
 ```bash
-curl -Lo v2_7_1_full.yaml https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/download/v2.7.1/v2_7_1_full.yaml
+curl -Lo v2_13_4_full.yaml https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/download/v2.13.4/v2_13_4_full.yaml
 ```
 run the following command to remove the ServiceAccount section in the manifest
 ```bash
-sed -i.bak -e '596,604d' ./v2_7_1_full.yaml
+sed -i.bak -e '596,604d' ./v2_13_4_full.yaml
 ```
 Replace your-cluster-name in the Deployment spec
 ```bash
-sed -i.bak -e 's|your-cluster-name|my-cluster|' ./v2_7_1_full.yaml
+sed -i.bak -e 's|your-cluster-name|my-cluster|' ./v2_13_4_full.yaml
 ```
 
 Apply the file
 ```bash
-kubectl apply -f v2_7_1_full.yaml
-kubectl apply -f v2_7_1_ingclass.yaml
+kubectl apply -f v2_13_4_full.yaml
+kubectl apply -f v2_13_4_ingclass.yaml
 ```
 
 Verify that the controller is installed
