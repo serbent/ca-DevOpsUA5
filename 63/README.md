@@ -45,7 +45,7 @@ curl -Lo v2_13_4_full.yaml https://github.com/kubernetes-sigs/aws-load-balancer-
 ```
 run the following command to remove the ServiceAccount section in the manifest
 ```bash
-sed -i.bak -e '596,604d' ./v2_13_4_full.yaml
+sed -i.bak -e '729,737d' ./v2_13_4_full.yaml
 ```
 Replace your-cluster-name in the Deployment spec
 ```bash
