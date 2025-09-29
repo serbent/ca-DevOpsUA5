@@ -1,9 +1,9 @@
-# Kubernetes Lab: Kind, Traefik, and 2048 Game
+# Kubernetes Lab: Kind, Nginx, and 2048 Game
 
 This guide will walk you through:
 - Installing [kind](https://kind.sigs.k8s.io/)
 - Creating a local Kubernetes cluster with kind
-- Installing Traefik ingress controller using Helm
+- Installing Nginx ingress controller
 - Deploying the 2048 game using Helm
 
 ---
@@ -47,7 +47,7 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 ## 4. Install nginx Ingress Controller
 
-Add the Traefik Helm repo:
+Install the controller:
 ```bash
 kubectl apply -f https://kind.sigs.k8s.io/examples/ingress/deploy-ingress-nginx.yaml
 ```
@@ -91,5 +91,4 @@ Now your game ld be accessible on http://localhost/
 ## References
 - [kind documentation](https://kind.sigs.k8s.io/docs/)
 - [Helm documentation](https://helm.sh/docs/)
-- [Traefik Helm Chart](https://doc.traefik.io/traefik/getting-started/install-traefik/#use-the-helm-chart)
-- [2048 Helm Chart](https://github.com/paulroesch/helm-2048)
+- [2048 repository](https://github.com/paulroesch/helm-2048)
