@@ -19,7 +19,7 @@ helm upgrade --install loki --namespace=loki-stack grafana/loki-stack --values l
 
 Install grafana
 ```bash
-helm upgrade --install grafana-agent --namespace=loki grafana/grafana-agent --values grafana-agent-values.yaml
+helm upgrade --install grafana-agent --namespace=loki-stack grafana/grafana-agent --values grafana-agent-values.yaml
 ```
 
 Froward ports
