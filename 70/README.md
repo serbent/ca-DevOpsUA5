@@ -1,7 +1,5 @@
 # 70. Go. Conditions, slices and loops
 
-# 70. If, for, slices
-
 
 ## Tasks 
 ### 1. Bank
